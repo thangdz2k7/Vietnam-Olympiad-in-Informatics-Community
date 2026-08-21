@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="9" short-name="vnm-tst-26-vmachine" url="https://polygon.codeforces.com/p9OMNW4/thangdz2k7/vnm-tst-26-vmachine">
+    <names>
+        <name language="vietnamese" value="TST 2026 - Bài 5 "/>
+    </names>
+    <statements latex-pdf-mode="obsolete">
+        <statement charset="UTF-8" language="vietnamese" mathjax="true" path="statements/vietnamese/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="vietnamese" mathjax="true" path="statements/.html/vietnamese/problem.html" type="text/html"/>
+    </statements>
+    <tutorials latex-pdf-mode="obsolete">
+        <tutorial charset="UTF-8" language="vietnamese" mathjax="true" path="statements/vietnamese/tutorial.tex" type="application/x-tex"/>
+        <tutorial charset="UTF-8" language="vietnamese" mathjax="true" path="statements/.html/vietnamese/tutorial.html" type="text/html"/>
+    </tutorials>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>2000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>91</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test method="manual" points="0.0"/>
+                <test cmd="gen 1 -seed 104729" group="subtask1" method="generated" points="0.7"/>
+                <test cmd="gen 1 -seed 130363" group="subtask1" method="generated" points="0.7"/>
+                <test cmd="gen 1 -seed 155921" group="subtask1" method="generated" points="0.7"/>
+                <test cmd="gen 1 -seed 181081" group="subtask1" method="generated" points="0.7"/>
+                <test cmd="gen 1 -seed 206369" group="subtask1" method="generated" points="0.7"/>
+                <test cmd="gen 1 -seed 231919" group="subtask1" method="generated" points="0.7"/>
+                <test cmd="gen 1 -seed 257561" group="subtask1" method="generated" points="0.7"/>
+                <test cmd="gen 1 -seed 282853" group="subtask1" method="generated" points="0.7"/>
+                <test cmd="gen 1 -seed 308497" group="subtask1" method="generated" points="0.7"/>
+                <test cmd="gen 1 -seed 333667" group="subtask1" method="generated" points="0.7"/>
+                <test cmd="gen 2 -seed 40961" group="subtask2" method="generated" points="1.0"/>
+                <test cmd="gen 2 -seed 65537" group="subtask2" method="generated" points="1.0"/>
+                <test cmd="gen 2 -seed 86011" group="subtask2" method="generated" points="1.0"/>
+                <test cmd="gen 2 -seed 111409" group="subtask2" method="generated" points="1.0"/>
+                <test cmd="gen 2 -seed 135721" group="subtask2" method="generated" points="1.0"/>
+                <test cmd="gen 2 -seed 160001" group="subtask2" method="generated" points="1.0"/>
+                <test cmd="gen 2 -seed 184321" group="subtask2" method="generated" points="1.0"/>
+                <test cmd="gen 2 -seed 208801" group="subtask2" method="generated" points="1.0"/>
+                <test cmd="gen 2 -seed 233021" group="subtask2" method="generated" points="1.0"/>
+                <test cmd="gen 2 -seed 257381" group="subtask2" method="generated" points="1.0"/>
+                <test cmd="gen 3 -seed 30011" group="subtask3" method="generated" points="1.5"/>
+                <test cmd="gen 3 -seed 45007" group="subtask3" method="generated" points="1.5"/>
+                <test cmd="gen 3 -seed 60013" group="subtask3" method="generated" points="1.5"/>
+                <test cmd="gen 3 -seed 75011" group="subtask3" method="generated" points="1.5"/>
+                <test cmd="gen 3 -seed 90001" group="subtask3" method="generated" points="1.5"/>
+                <test cmd="gen 3 -seed 105019" group="subtask3" method="generated" points="1.5"/>
+                <test cmd="gen 3 -seed 120011" group="subtask3" method="generated" points="1.5"/>
+                <test cmd="gen 3 -seed 135037" group="subtask3" method="generated" points="1.5"/>
+                <test cmd="gen 3 -seed 150001" group="subtask3" method="generated" points="1.5"/>
+                <test cmd="gen 3 -seed 165023" group="subtask3" method="generated" points="1.5"/>
+                <test cmd="gen 4 -seed 50021" group="subtask4" method="generated" points="1.0"/>
+                <test cmd="gen 4 -seed 70001" group="subtask4" method="generated" points="1.0"/>
+                <test cmd="gen 4 -seed 90019" group="subtask4" method="generated" points="1.0"/>
+                <test cmd="gen 4 -seed 110017" group="subtask4" method="generated" points="1.0"/>
+                <test cmd="gen 4 -seed 130003" group="subtask4" method="generated" points="1.0"/>
+                <test cmd="gen 4 -seed 150001" group="subtask4" method="generated" points="1.0"/>
+                <test cmd="gen 4 -seed 170021" group="subtask4" method="generated" points="1.0"/>
+                <test cmd="gen 4 -seed 190027" group="subtask4" method="generated" points="1.0"/>
+                <test cmd="gen 4 -seed 210011" group="subtask4" method="generated" points="1.0"/>
+                <test cmd="gen 4 -seed 230003" group="subtask4" method="generated" points="1.0"/>
+                <test cmd="gen 5 -seed 123457" group="subtask5" method="generated" points="1.0"/>
+                <test cmd="gen 5 -seed 223453" group="subtask5" method="generated" points="1.0"/>
+                <test cmd="gen 5 -seed 323449" group="subtask5" method="generated" points="1.0"/>
+                <test cmd="gen 5 -seed 423437" group="subtask5" method="generated" points="1.0"/>
+                <test cmd="gen 5 -seed 523433" group="subtask5" method="generated" points="1.0"/>
+                <test cmd="gen 5 -seed 623423" group="subtask5" method="generated" points="1.0"/>
+                <test cmd="gen 5 -seed 723407" group="subtask5" method="generated" points="1.0"/>
+                <test cmd="gen 5 -seed 823397" group="subtask5" method="generated" points="1.0"/>
+                <test cmd="gen 5 -seed 923389" group="subtask5" method="generated" points="1.0"/>
+                <test cmd="gen 5 -seed 1023371" group="subtask5" method="generated" points="1.0"/>
+                <test cmd="gen 6 -seed 77713" group="subtask6" method="generated" points="1.0"/>
+                <test cmd="gen 6 -seed 88843" group="subtask6" method="generated" points="1.0"/>
+                <test cmd="gen 6 -seed 99991" group="subtask6" method="generated" points="1.0"/>
+                <test cmd="gen 6 -seed 111121" group="subtask6" method="generated" points="1.0"/>
+                <test cmd="gen 6 -seed 122251" group="subtask6" method="generated" points="1.0"/>
+                <test cmd="gen 6 -seed 133367" group="subtask6" method="generated" points="1.0"/>
+                <test cmd="gen 6 -seed 144497" group="subtask6" method="generated" points="1.0"/>
+                <test cmd="gen 6 -seed 155603" group="subtask6" method="generated" points="1.0"/>
+                <test cmd="gen 6 -seed 166721" group="subtask6" method="generated" points="1.0"/>
+                <test cmd="gen 6 -seed 177857" group="subtask6" method="generated" points="1.0"/>
+                <test cmd="gen 7 -seed 314159" group="subtask7" method="generated" points="1.0"/>
+                <test cmd="gen 7 -seed 271829" group="subtask7" method="generated" points="1.0"/>
+                <test cmd="gen 7 -seed 161803" group="subtask7" method="generated" points="1.0"/>
+                <test cmd="gen 7 -seed 141421" group="subtask7" method="generated" points="1.0"/>
+                <test cmd="gen 7 -seed 173205" group="subtask7" method="generated" points="1.0"/>
+                <test cmd="gen 7 -seed 223607" group="subtask7" method="generated" points="1.0"/>
+                <test cmd="gen 7 -seed 244949" group="subtask7" method="generated" points="1.0"/>
+                <test cmd="gen 7 -seed 264575" group="subtask7" method="generated" points="1.0"/>
+                <test cmd="gen 7 -seed 316227" group="subtask7" method="generated" points="1.0"/>
+                <test cmd="gen 7 -seed 346410" group="subtask7" method="generated" points="1.0"/>
+                <test cmd="gen 8 -seed 1000003" group="subtask8" method="generated" points="1.0"/>
+                <test cmd="gen 8 -seed 1100009" group="subtask8" method="generated" points="1.0"/>
+                <test cmd="gen 8 -seed 1200013" group="subtask8" method="generated" points="1.0"/>
+                <test cmd="gen 8 -seed 1300021" group="subtask8" method="generated" points="1.0"/>
+                <test cmd="gen 8 -seed 1400017" group="subtask8" method="generated" points="1.0"/>
+                <test cmd="gen 8 -seed 1500007" group="subtask8" method="generated" points="1.0"/>
+                <test cmd="gen 8 -seed 1600033" group="subtask8" method="generated" points="1.0"/>
+                <test cmd="gen 8 -seed 1700021" group="subtask8" method="generated" points="1.0"/>
+                <test cmd="gen 8 -seed 1800017" group="subtask8" method="generated" points="1.0"/>
+                <test cmd="gen 8 -seed 1900013" group="subtask8" method="generated" points="1.0"/>
+                <test cmd="gen 9 -seed 424243" group="subtask9" method="generated" points="1.8"/>
+                <test cmd="gen 9 -seed 515152" group="subtask9" method="generated" points="1.8"/>
+                <test cmd="gen 9 -seed 616161" group="subtask9" method="generated" points="1.8"/>
+                <test cmd="gen 9 -seed 717171" group="subtask9" method="generated" points="1.8"/>
+                <test cmd="gen 9 -seed 818181" group="subtask9" method="generated" points="1.8"/>
+                <test cmd="gen 9 -seed 919191" group="subtask9" method="generated" points="1.8"/>
+                <test cmd="gen 9 -seed 1234567" group="subtask9" method="generated" points="1.8"/>
+                <test cmd="gen 9 -seed 2345671" group="subtask9" method="generated" points="1.8"/>
+                <test cmd="gen 9 -seed 3456781" group="subtask9" method="generated" points="1.8"/>
+                <test cmd="gen 9 -seed 4567897" group="subtask9" method="generated" points="1.8"/>
+            </tests>
+            <groups>
+                <group feedback-policy="points" name="subtask1" points="7.000000000000001" points-policy="complete-group"/>
+                <group feedback-policy="points" name="subtask2" points="10.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="subtask3" points="15.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="subtask4" points="10.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="subtask5" points="10.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="subtask6" points="10.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="subtask7" points="10.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="subtask8" points="10.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="subtask9" points="18.000000000000004" points-policy="complete-group"/>
+            </groups>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+            <file path="files/tutorial.tex"/>
+            <file path="files/vmachinelib.h" type="h.g++"/>
+        </resources>
+        <attachments>
+            <file path="files/vmachine.zip"/>
+        </attachments>
+        <executables>
+            <executable>
+                <source path="files/checker.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/checker.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/gen.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/gen.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker type="testlib">
+            <source path="files/checker.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>2</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="main">
+                <source path="solutions/710kSolution.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/710kSolution.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/sub6.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/sub6.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>

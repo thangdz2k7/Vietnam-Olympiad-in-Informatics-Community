@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="19" short-name="vnm-tst-26-magician" url="https://polygon.codeforces.com/p5CpF39/thangdz2k7/vnm-tst-26-magician">
+    <names>
+        <name language="vietnamese" value="TST 2026 - Bài 3"/>
+    </names>
+    <statements latex-pdf-mode="obsolete">
+        <statement charset="UTF-8" language="vietnamese" mathjax="true" path="statements/vietnamese/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="vietnamese" mathjax="true" path="statements/.html/vietnamese/problem.html" type="text/html"/>
+    </statements>
+    <tutorials latex-pdf-mode="obsolete">
+        <tutorial charset="UTF-8" language="vietnamese" mathjax="true" path="statements/vietnamese/tutorial.tex" type="application/x-tex"/>
+        <tutorial charset="UTF-8" language="vietnamese" mathjax="true" path="statements/.html/vietnamese/tutorial.html" type="text/html"/>
+    </tutorials>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1" treat-points-from-checker-as-percent="true">
+        <testset name="tests">
+            <time-limit>2000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>30</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="generator -subtaskId 1 -mode 1 -seed 101" group="1" method="generated" points="2.0"/>
+                <test cmd="generator -subtaskId 1 -mode 1 -seed 202" group="1" method="generated" points="2.0"/>
+                <test cmd="generator -subtaskId 1 -mode 2 -seed 404" group="1" method="generated" points="2.0"/>
+                <test cmd="generator -subtaskId 1 -mode 2 -seed 505" group="1" method="generated" points="2.0"/>
+                <test cmd="generator -subtaskId 1 -mode 2 -seed 606" group="1" method="generated" points="2.0"/>
+                <test cmd="generator -subtaskId 2 -mode 1 -seed 1111" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 1 -seed 2222" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 1 -seed 3333" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 1 -seed 4444" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 1 -seed 5555" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 1 -seed 6666" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 1 -seed 7777" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 1 -seed 8888" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 1 -seed 9999" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 1 -seed 2345" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 1 -seed 3456" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 2 -seed 10001" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 2 -seed 20002" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 2 -seed 30003" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 2 -seed 40004" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 2 -seed 50005" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 2 -seed 60006" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 2 -seed 70007" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 2 -seed 80008" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 2 -seed 90009" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 2 -seed 13579" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 2 -seed 24680" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 2 -seed 11223" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 2 -seed 44556" group="2" method="generated" points="3.6"/>
+                <test cmd="generator -subtaskId 2 -mode 2 -seed 99000" group="2" method="generated" points="3.6"/>
+            </tests>
+            <groups>
+                <group feedback-policy="points" name="1" points="10.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="2" points="89.99999999999997" points-policy="complete-group"/>
+            </groups>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/magicianlib.h" type="h.g++"/>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+            <file path="files/tutorial.tex"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/checker.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/checker.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/generator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/generator.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker type="testlib">
+            <source path="files/checker.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>8</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="rejected">
+                <source path="solutions/cheese.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/cheese.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/cheese2.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/cheese2.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/sol-partial.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/sol-partial.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/sol-sub1.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/sol-sub1.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/solution.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/solution.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>

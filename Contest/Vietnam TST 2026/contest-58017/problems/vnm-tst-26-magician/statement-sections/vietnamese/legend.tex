@@ -1,0 +1,21 @@
+Hôm nay, Alice và Bob sẽ thực hiện một trò ảo thuật trước mặt hàng trăm khán giả. Trò ảo thuật mà hai người sẽ làm có thể mô tả như sau:
+\begin{itemize}
+   \item Đầu tiên, Bob bị bịt mắt, Alice gọi một khán giả bất kỳ lên. Khán giả sẽ chọn $N$ là bài trong bộ bài Tây $52$ lá Alice đã chuẩn bị.
+   \item Từ $N$ lá bài, khán giả vẽ lên bảng một cây \textbf{có gốc} gồm $N$ đỉnh, mỗi đỉnh tương ứng với một lá bài.
+   \item Tiếp theo, Alice sẽ viết một số nguyên dương ở sau tất cả lá bài khán giả đã chọn.
+   \item Sau đó, Alice xáo lại các lá bài và đưa cho Bob đống bài vừa xáo. Bob không được nhìn mặt trước của các lá bài mà chỉ được nhìn các số nguyên dương mà Alice đã viết trên đó.
+   \item Từ dữ kiện trên, Bob sẽ dựng lại cây mà khán giả đã vẽ. Trò ảo thuật sẽ được coi là thành công nếu như cây mà Bob vẽ giống hệt với cây mà khán giả đã vẽ ban đầu. Cụ thể:
+   \begin{itemize}
+      \item Hai lá bài được chọn làm gốc phải giống hệt nhau.
+      \item Các cặp lá bài có cạnh nối trực tiếp mô phỏng quan hệ cha-con trên cây cũng phải giống hệt nhau. Nếu trên cây của khán giả, lá bài $A$ là cha của lá bài $B$ nhưng trên cây của Bob, lá bài $B$ là cha của lá bài $A$ thì hai cây sẽ không được coi là giống nhau.
+      \item \textbf{Lưu ý:} Hai lá bài được cho là giống nhau nếu mặt trước của hai lá bài giống hệt nhau.
+   \end{itemize}
+\end{itemize}
+
+Vì giới hạn kích thước của bảng, cây mà khán giả vẽ luôn đảm bảo có bậc tối đa nhỏ hơn hoặc bằng $8$ và số đỉnh tối đa có cùng bậc nhỏ hơn hoặc bằng $8$ $^\dagger$. Trong trò ảo thuật này, cây sẽ được mô phỏng dưới dạng một danh sách kề, mỗi đỉnh lưu trữ tất cả các con kề với đỉnh đó. Gốc của cây là đỉnh duy nhất không nằm trong danh sách kề của bất kỳ đỉnh nào.
+
+Trò ảo thuật sẽ khiến mọi người càng trầm trồ và thán phục nếu giá trị lớn nhất mà Alice viết trên các lá bài càng nhỏ.
+
+\textbf{Yêu cầu:} Hãy viết một chương trình mô phỏng lại trò ảo thuật của Alice và Bob.
+
+$\dagger$: Trong cây, một đỉnh có bậc là $k$ nếu trên đường đi ngắn nhất từ gốc đến đỉnh đó có đúng $k$ cạnh. Bậc tối đa của cây được coi là bậc tối đa của các đỉnh trên cây đó.

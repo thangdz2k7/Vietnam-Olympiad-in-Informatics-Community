@@ -1,0 +1,54 @@
+\textbf{Chi tiết cài đặt}
+
+Thí sinh cần cài đặt hai hàm sau:
+
+\begin{lstlisting}
+vector<int> solveAlice(vector<vector<int>> adj);
+\end{lstlisting}
+
+\begin{itemize}
+   \item $adj$: Một mảng hai chiều mô phỏng danh sách kề của cây mà khán giả đã vẽ. Trong đó:
+   \begin{itemize}
+      \item $N=|adj|$
+      \item Các đỉnh trên cây được đánh số từ $0$ đến $N-1$, trong đó đỉnh thứ $i$ ($0\le i\le N-1$) tương ứng với lá bài thứ $i$
+      \item Mỗi phần tử $adj_i$ ($0\le i\le N-1$) là một mảng lưu tất cả các \textbf{đỉnh con} kề với đỉnh $i$ trên cây mà khán giả đã vẽ
+      \item Giá trị duy nhất không xuất hiện trên các mảng $adj_i$ là gốc của cây.
+      \item $\sum_{|adj_i|}=N-1$
+   \end{itemize}
+   \item Hàm này cần trả về một mảng $S$ gồm $N$ phần tử, trong đó $S_i$ ($0\le i\le N-1$) là số nguyên dương Alice đánh trên lá bài thứ $i$. Các số nguyên dương Alice viết không nhất thiết phải đôi một phân biệt.
+\end{itemize}
+
+\begin{lstlisting}
+vector<vector<int>> solveBob(vector<int> S);
+\end{lstlisting}
+
+\begin{itemize}
+   \item $S$: Một mảng gồm $N$ phần tử, trong đó $S_i$ ($0\le i\le N-1$) đại diện cho giá trị được viết trên lá bài thứ $i$ từ đống bài Alice đưa cho Bob. Các giá trị này có thể được sắp xếp lại theo một thứ tự bất kỳ, không nhất thiết phải theo thứ tự các giá trị xuất hiện trên mảng mà Alice đã trả về.
+   \item Bob sẽ chỉ được biết các số được đánh trên các lá bài mà không được biết mặt trước các lá bài Alice đưa trông như thế nào.
+   \item Hàm này cần trả về một mảng hai chiều tương ứng với danh sách kề của cây mà Bob vẽ. Danh sách kề này cần mô phỏng cây y hệt so với cây mà khán giả đã vẽ, với các chỉ số trong danh sách tương ứng với trình tự các lá bài mà Alice đã xáo.
+\end{itemize}
+
+Trình chấm của bài toán này sẽ hoạt động như sau:
+\begin{itemize}
+   \item Trong một test, trình chấm sẽ chạy $T$ lần, mỗi lần chạy tương ứng với một trường hợp thử nghiệm. Trong một lần chạy:
+   \begin{itemize}
+      \item Đầu tiên, trình chấm gọi hàm \texttt{solveAlice()} trước. Thông tin của mảng $S$ từ hàm \texttt{solveAlice()} sẽ được trình chấm lưu trữ lại.
+      \item Sau đó, trình chấm sẽ gọi hàm \texttt{solveBob()}. Khi đã nhận về kết quả từ hàm \texttt{solveBob()}, trình chấm sẽ kiểm tra tính hợp lệ của kết quả. Nếu đáp án đưa ra thỏa mãn điều kiện đề bài, trình chấm sẽ thực hiện lần chạy tiếp theo, hoặc dừng lại khi đã thực hiện xong tất cả $T$ lần chạy.
+   \end{itemize}
+   \item \textbf{Lưu ý: Các lần gọi hàm \texttt{solveAlice()} và \texttt{solveBob()} được gọi trên các chương trình hoàn toàn riêng biệt}.
+   \item Sau khi chương trình đã thực hiện đủ $T$ lần chạy, trình chấm sẽ tính điểm dựa trên độ tối ưu chương trình của bạn (sẽ nói rõ ở phần cách tính điểm).
+\end{itemize}
+
+\textbf{Lưu ý:}
+\begin{itemize}
+   \item Chương trình của bạn cần phải khai báo thư viện \texttt{"magicianlib.h"} ở đầu.
+   \item Trong chương trình, thí sinh được phép cài đặt các biến, các hàm toàn cục, nhưng không được phép có hàm \texttt{main()}.
+   \item Chương trình của bạn không được tương tác trực tiếp với đầu vào chuẩn (stdin) và đầu ra chuẩn (stdout).
+\end{itemize}
+
+\textbf{Ràng buộc}
+\begin{itemize}
+   \item $T\le 100$
+   \item $N\le 32$
+   \item Cấu trúc của cây luôn đảm bảo bậc tối đa của cây nhỏ hơn hoặc bằng $8$ và số đỉnh tối đa có cùng bậc nhỏ hơn hoặc bằng $8$
+\end{itemize}

@@ -1,0 +1,45 @@
+\textbf{Chi tiết cài đặt}
+
+Thí sinh cần cài đặt hàm sau:
+
+\begin{lstlisting}
+vector<int> solve(int N);
+\end{lstlisting}
+
+\begin{itemize}
+   \item $N$: Số quả bóng trong đống bóng cho trước.
+   \item Hàm này cần trả về một mảng $B$ gồm $N$ phần tử đại diện cho cấu hình (trạng thái màu của các quả bóng) mà bạn dự đoán. Cấu hình của bạn cần phải đảm bảo các điều kiện như sau:
+   \begin{itemize}
+      \item $0\le B_i\le K-1$ với mọi $i$ từ $0$ đến $N-1$.
+      \item $B$ \textbf{đẳng cấu} với $A$ ($A$ là mảng gồm $N$ phần tử đại diện cho trạng thái màu gốc của $N$ quả bóng).
+   \end{itemize}
+   \item \textbf{Lưu ý:} Bạn không được cho trước giá trị chính xác của $K$.
+   \item Hàm này được gọi nhiều lần, mỗi lần gọi tương ứng với một trường hợp thử nghiệm.
+\end{itemize}
+
+Trong hàm \texttt{solve()}, thí sinh được phép gọi hàm sau:
+
+\begin{lstlisting}
+bool ask(vector<int> pos);
+\end{lstlisting}
+
+\begin{itemize}
+   \item $pos$: Một mảng bao gồm chỉ số của tất cả quả bóng được chọn. Cần phải đảm bảo các phần tử trong mảng $pos$ là các chỉ số quả bóng hợp lệ, và các giá trị trong mảng $pos$ phải đôi một phân biệt.
+   \item Hàm này sẽ trả về \texttt{true} nếu như số màu khác nhau trong đống bóng được chọn lớn hơn hoặc bằng $\lfloor \frac{K+1}2\rfloor$, ngược lại hàm sẽ trả về \texttt{false}.
+   \item Với mỗi trường hợp thử nghiệm, hàm \texttt{solve()} được gọi hàm \texttt{ask()} tối đa $14000$ lần.
+\end{itemize}
+
+\textbf{Lưu ý:}
+\begin{itemize}
+   \item Chương trình của bạn cần phải khai báo thư viện \texttt{"colorfullib.h"} ở đầu.
+   \item Trong chương trình, thí sinh được phép cài đặt các biến, các hàm toàn cục, nhưng không được phép có hàm \texttt{main()}.
+   \item Chương trình của bạn không được tương tác trực tiếp với đầu vào chuẩn (stdin) và đầu ra chuẩn (stdout).
+\end{itemize}
+
+\textbf{Ràng buộc}
+
+\begin{itemize}
+   \item $3\le K\le 32$
+   \item $K\le N\le 256$
+   \item $\sum_N\le 2\times 10^4$
+\end{itemize}

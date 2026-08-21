@@ -1,0 +1,14 @@
+Giả sử chương trình gọi \texttt{solveGenius(2, 1, \{0\}, \{1\})} và được trả về \texttt{\{1, 2\}}. Sau đó chương trình thực hiện các lần gọi \texttt{solveCitizen} như sau:
+
+\begin{itemize}
+\item Lượt $1$: 
+    \begin{itemize}
+    \item Người $0$: \texttt{solveCitizen(\{2\}, \{\})}. Người $0$ thấy người còn lại mang áo có số $2$ và biết đây là lượt mình sẽ rời đi nên \texttt{solveCitizen(\{2\}, \{\})} trả về \textbf{true}. 
+    \item Người $1$: \texttt{solveCitizen(\{1\}, \{\})}. Người $1$ thấy người còn lại mang áo có số $1$ và biết đây không phải là lượt mình sẽ rời đi nên \texttt{solveCitizen(\{1\}, \{\})} trả về \textbf{false}. 
+    \end{itemize}
+\item Lượt $2$: Lúc này chỉ còn người $1$ ở trong vương quốc.
+    \begin{itemize}
+    \item Người $1$: \texttt{solveCitizen(\{1\}, \{\{1\}\})}. Người $1$ thấy người mang áo số $1$ đã rời đi vào lượt trước và biết đây là lượt mình sẽ rời đi nên \texttt{solveCitizen(\{1\}, \{\{1\}\})} trả về \textbf{true}. 
+    \end{itemize}
+\item Kết thúc $2$ lượt, tất cả người dân đã rời khỏi vương quốc.
+\end{itemize}

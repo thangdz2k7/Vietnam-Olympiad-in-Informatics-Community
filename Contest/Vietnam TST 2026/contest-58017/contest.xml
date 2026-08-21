@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<contest url="https://polygon.codeforces.com/c/58017">
+    <names>
+        <name language="vietnamese" value="Vietnam TST 2026"/>
+    </names>
+    <problems>
+        <problem index="a" url="https://polygon.codeforces.com/p3NAcCh/thangdz2k7/vnm-tst-26-cstation"/>
+        <problem index="b" url="https://polygon.codeforces.com/p6x7rba/thangdz2k7/vnm-tst-26-colorful"/>
+        <problem index="c" url="https://polygon.codeforces.com/p5CpF39/thangdz2k7/vnm-tst-26-magician"/>
+        <problem index="d" url="https://polygon.codeforces.com/p1grUO4/thangdz2k7/vnm-tst-26-sgame"/>
+        <problem index="e" url="https://polygon.codeforces.com/p9OMNW4/thangdz2k7/vnm-tst-26-vmachine"/>
+        <problem index="f" url="https://polygon.codeforces.com/p4OciEN/thangdz2k7/vnm-tst-26-festival"/>
+    </problems>
+</contest>

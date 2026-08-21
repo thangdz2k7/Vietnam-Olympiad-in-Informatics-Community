@@ -1,0 +1,28 @@
+\begin{center}
+  \begin{tabular}{|c|c|l|} \hline
+    \textbf{Subtask} & \textbf{Điểm} & \textbf{Giới hạn} \\ \hline
+    1 & $10$ & $N=2$ \\ \hline
+    2 & $20$ & Với mọi $v$ từ $0$ đến $N-1$, tồn tại \textbf{tối đa} một cặp số có dạng $(u,v)$ trong $K$ cặp số \\ \hline
+    3 & $20$ & $S=2$ \\ \hline
+    4 & $50$ & Không có ràng buộc gì thêm \\ \hline
+  \end{tabular}
+\end{center}
+
+\textbf{Cách tính điểm}
+
+Nếu trong quá trình người dân rời khỏi vương quốc xảy ra mâu thuẫn, bạn sẽ không nhận được điểm cho test đó.
+
+Ngược lại, gọi $P$ là số lớn nhất được viết trên những chiếc áo choàng theo cách giải của bạn và $J$ là số lớn nhất được viết trên những chiếc áo choàng theo cách giải của giám khảo. Gọi $D=P-J$. Khi đó điểm của bạn được tính theo công thức như sau:
+
+\begin{center}
+  \begin{tabular}{|c|c|} \hline
+    \textbf{Giá trị $D$} & \textbf{Phần trăm số điểm} \\ \hline
+    $D\le 0$ & $100\%$ \\ \hline
+    $D=1$ & $80\%$ \\ \hline
+    $D=2$ & $60\%$ \\ \hline
+    $3\le D\le N$ & $\frac{1}{D-1}\times 100\%$ \\ \hline
+    $D\gt N$ & $0\%$ \\ \hline
+  \end{tabular}
+\end{center}
+
+Điểm của một subtask bằng phần trăm điểm tối thiểu của một test trong subtask đó nhân với số điểm tối đa của subtask.

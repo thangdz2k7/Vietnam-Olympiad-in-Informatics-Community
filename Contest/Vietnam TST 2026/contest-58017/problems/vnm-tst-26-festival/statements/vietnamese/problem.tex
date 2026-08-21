@@ -1,0 +1,124 @@
+\begin{problem}{TST 2026 - Bài 6}{standard input}{standard output}{1 second}{256 megabytes}
+
+Ở một vương quốc ABC, có một vị vua đang trị vì và cai quản $N$ người dân. Nhà vua muốn tổ chức một lễ hội ở ngoài vương quốc và cần đưa tất cả người dân rời khỏi vương quốc. Vì mỗi người cần làm các công việc khác nhau nên nhà vua đã bí mật đánh số các người dân từ $0$ đến $N-1$. Để thực hiện mong muốn của mình, nhà vua mỗi lần có thể chọn một nhóm người để rời khỏi vương quốc cùng lúc, tuy nhiên mỗi lần nhà vua chỉ có thể chọn tối đa $S$ người trong cùng một lượt. Thêm vào đó, nhà vua có $K$ cặp số được đánh số từ $0$ đến $K-1$, trong đó cặp số thứ $i$ ($0\le i\le K-1$) là cặp số $(U_i,V_i)$ tương ứng với việc nhà vua muốn người dân $U_i$ phải rời khỏi vương quốc trước người dân $V_i$. Vì không muốn người dân hoảng loạn, nhà vua không cho những người dân trong vương quốc biết $K$ cặp số trên.
+
+Nhà vua đã quyết định mời một nhà thông thái đến để giúp đỡ công việc trên sao cho mọi thứ có thể diễn ra thuận lợi nhất có thể. Kế hoạch của họ như sau:
+\begin{itemize}
+   \item Đầu tiên, nhà thông thái sẽ bàn bạc với những người dân để họ có phương án rời khỏi vương quốc thuận lợi. Lúc này nhà thông thái vẫn chưa biết giá trị $K$ cặp số của nhà vua.
+   \item Sau khi đã bàn bạc với người dân, nhà thông thái sẽ được biết giá trị của $K$ cặp số đó. Nhà thông thái cần chuẩn bị $N$ chiếc áo choàng tương ứng với $N$ người dân, mỗi chiếc áo choàng được nhà thông thái đánh một số nguyên dương.
+   \item Tiếp theo, nhà thông thái sẽ phát $N$ chiếc áo choàng cho $N$ người dân tương ứng. Chiếc áo choàng rất kín, đảm bảo mỗi người dân chỉ có thể nhìn thấy số được đánh trên các chiếc áo choàng của những người dân khác \textbf{nhưng họ lại không thể thấy số được đánh trên áo choàng của chính mình}. Những người dân không được bàn bạc và trao đổi với nhau trong suốt quá trình rời khỏi vương quốc.
+   \item Nhà vua sẽ thực hiện $N$ lượt, mỗi lượt nhà vua sẽ hỏi tất cả người dân có ai muốn rời khỏi vương quốc trong lượt này không. Mỗi lượt, sau khi biểu quyết, nhà vua sẽ chọn tất cả người dân biểu quyết đồng ý rời khỏi vương quốc. Trong một lượt có thể không ai rời khỏi vương quốc, nhưng cần đảm bảo mỗi lượt chỉ tối đa $S$ người được phép rời khỏi vương quốc cùng lúc và phải thỏa mãn điều kiện $K$ cặp số của nhà vua.
+\end{itemize}
+
+Kế hoạch được cho là thành công khi tất cả người dân có thể rời khỏi vương quốc thuận lợi. Nhà vua sẽ càng trầm trồ trước tài năng của nhà thông thái nếu số lớn nhất được đánh trên những chiếc áo choàng càng nhỏ càng tốt.
+
+\textbf{Yêu cầu:} Hãy viết một chương trình mô phỏng lại quá trình nhà thông thái bàn bạc, chuẩn bị áo choàng và quá trình những người dân rời khỏi vương quốc sao cho số lớn nhất được đánh trên những chiếc áo choàng nhỏ nhất có thể.
+
+\InputFile
+\textbf{Chi tiết cài đặt}
+
+Thí sinh cần cài đặt hai hàm sau:
+
+\begin{lstlisting}
+vector<int> solveGenius(int N, int S, const vector<int>& U, const vector<int>& V);
+\end{lstlisting}
+
+\begin{itemize}
+   \item $N$: Số lượng người dân trong vương quốc ABC.
+   \item $S$: Số lượng người dân tối đa có thể rời khỏi vương quốc cùng lúc trong một lượt.
+   \item $U,V$: Hai mảng gồm $K=|U|=|V|$ phần tử, trong đó phần tử $U_i$ và $V_i$ ($0\le i\le K-1$) tương ứng với cặp số thứ $i$ của nhà vua.
+   \item Hàm này cần trả về một mảng $A$ gồm $N$ phần tử, trong đó $A_i$ ($0\le i\le N-1$) là số nguyên dương được đánh trên chiếc áo choàng thứ $i$ mà nhà thông thái sẽ phát cho người dân thứ $i$.
+   \item Hàm này được gọi \textbf{một lần duy nhất} với mỗi test.
+\end{itemize}
+
+\begin{lstlisting}
+bool solveCitizen(const vector<int>& A,const vector<vector<int>>& history);
+\end{lstlisting}
+
+\begin{itemize}
+   \item $A$: Một mảng gồm $N-1$ phần tử bao gồm các số được viết trên những chiếc áo choàng mà người dân tương ứng có thể nhìn thấy. Các phần tử trong dãy được sắp xếp tăng dần.
+   \item $history$: Một mảng hai chiều lưu lại lịch sử của những người dân đã rời khỏi vương quốc trong các lượt trước. Trong đó:
+   \begin{itemize}
+      \item $|history|$ là số lượt mà nhà vua đã thực hiện trước đó.
+      \item Với mọi $i$ thỏa mãn $0\le i\le |history|-1$, $history_i$ lưu trữ số được viết trên những chiếc áo choàng của những người dân đã rời khỏi vương quốc trong lượt thứ $i+1$. Các giá trị trong mảng $history_i$ được sắp xếp tăng dần.
+   \end{itemize}
+   \item Hàm này cần trả về \texttt{true} nếu người dân này quyết định rời khỏi vương quốc trong lượt thứ $|history|+1$ và trả về \texttt{false} trong trường hợp ngược lại.
+   \item Hàm này sẽ được gọi tối đa $N^2$ lần sau khi hàm \texttt{solveGenius()} được gọi, mỗi lần gọi tương ứng với việc kiểm tra một người dân có rời khỏi vương quốc trong một lượt cụ thể không.
+\end{itemize}
+
+Trình chấm của bài toán này sẽ hoạt động như sau:
+\begin{itemize}
+   \item Đầu tiên, trình chấm gọi hàm \texttt{solveGenius()} trước. Thông tin của mảng $A$ từ hàm \texttt{solveGenius()} sẽ được trình chấm lưu trữ lại.
+   \item Sau đó, trình chấm sẽ gọi hàm \texttt{solveCitizen()} tối đa $N^2$ lần. Cụ thể:
+   \begin{itemize}
+      \item Trong một lượt mô phỏng việc nhà vua đưa người dân rời khỏi vương quốc, trình chấm sẽ gọi hàm \texttt{solveCititzen()} một số lần, mỗi lần gọi là một lần kiểm tra một người dân \textbf{còn ở trong vương quốc} có muốn rời trong lượt đó không.
+      \item Trình chấm sẽ thực hiện $N$ lượt tương ứng với $N$ lượt nhà vua đưa người dân rời khỏi vương quốc. Mỗi lượt, khi đã nhận về kết quả từ các lần gọi hàm \texttt{solveCititzen()} trong lượt đó, trình chấm sẽ kiểm tra tính hợp lệ của hành động này. Nếu hợp lệ, trình chấm tiếp tục xét lượt tiếp theo, hoặc dừng lại nếu đã xong $N$ lượt.
+   \end{itemize}
+   \item \textbf{Lưu ý: Các lần gọi hàm \texttt{solveGenius()} và \texttt{solveCitizen()} được gọi trên các chương trình hoàn toàn riêng biệt}.
+   \item Cuối cùng, trình chấm tính điểm dựa trên độ tối ưu chương trình của bạn (sẽ nói rõ ở phần cách tính điểm).
+\end{itemize}
+
+\textbf{Lưu ý:}
+\begin{itemize}
+   \item Chương trình của bạn cần phải khai báo thư viện \texttt{"festivallib.h"} ở đầu.
+   \item Trong chương trình, thí sinh được phép cài đặt các biến, các hàm toàn cục, nhưng không được phép có hàm \texttt{main()}.
+   \item Chương trình của bạn không được tương tác trực tiếp với đầu vào chuẩn (stdin) và đầu ra chuẩn (stdout).
+\end{itemize}
+
+\textbf{Ràng buộc}
+\begin{itemize}
+   \item $2\le N\le 200$
+   \item $1\le S\le N$
+   \item $0\le K<\frac{N\times (N-1)}2$
+   \item Đảm bảo luôn tồn tại phương án để những người dân có thể rời khỏi vương quốc
+\end{itemize}
+
+\Scoring
+\begin{center}
+  \begin{tabular}{|c|c|l|} \hline
+    \textbf{Subtask} & \textbf{Điểm} & \textbf{Giới hạn} \\ \hline
+    1 & $10$ & $N=2$ \\ \hline
+    2 & $20$ & Với mọi $v$ từ $0$ đến $N-1$, tồn tại \textbf{tối đa} một cặp số có dạng $(u,v)$ trong $K$ cặp số \\ \hline
+    3 & $20$ & $S=2$ \\ \hline
+    4 & $50$ & Không có ràng buộc gì thêm \\ \hline
+  \end{tabular}
+\end{center}
+
+\textbf{Cách tính điểm}
+
+Nếu trong quá trình người dân rời khỏi vương quốc xảy ra mâu thuẫn, bạn sẽ không nhận được điểm cho test đó.
+
+Ngược lại, gọi $P$ là số lớn nhất được viết trên những chiếc áo choàng theo cách giải của bạn và $J$ là số lớn nhất được viết trên những chiếc áo choàng theo cách giải của giám khảo. Gọi $D=P-J$. Khi đó điểm của bạn được tính theo công thức như sau:
+
+\begin{center}
+  \begin{tabular}{|c|c|} \hline
+    \textbf{Giá trị $D$} & \textbf{Phần trăm số điểm} \\ \hline
+    $D\le 0$ & $100\%$ \\ \hline
+    $D=1$ & $80\%$ \\ \hline
+    $D=2$ & $60\%$ \\ \hline
+    $3\le D\le N$ & $\frac{1}{D-1}\times 100\%$ \\ \hline
+    $D\gt N$ & $0\%$ \\ \hline
+  \end{tabular}
+\end{center}
+
+Điểm của một subtask bằng phần trăm điểm tối thiểu của một test trong subtask đó nhân với số điểm tối đa của subtask.
+
+
+\Note
+Giả sử chương trình gọi \texttt{solveGenius(2, 1, \{0\}, \{1\})} và được trả về \texttt{\{1, 2\}}. Sau đó chương trình thực hiện các lần gọi \texttt{solveCitizen} như sau:
+
+\begin{itemize}
+\item Lượt $1$: 
+    \begin{itemize}
+    \item Người $0$: \texttt{solveCitizen(\{2\}, \{\})}. Người $0$ thấy người còn lại mang áo có số $2$ và biết đây là lượt mình sẽ rời đi nên \texttt{solveCitizen(\{2\}, \{\})} trả về \textbf{true}. 
+    \item Người $1$: \texttt{solveCitizen(\{1\}, \{\})}. Người $1$ thấy người còn lại mang áo có số $1$ và biết đây không phải là lượt mình sẽ rời đi nên \texttt{solveCitizen(\{1\}, \{\})} trả về \textbf{false}. 
+    \end{itemize}
+\item Lượt $2$: Lúc này chỉ còn người $1$ ở trong vương quốc.
+    \begin{itemize}
+    \item Người $1$: \texttt{solveCitizen(\{1\}, \{\{1\}\})}. Người $1$ thấy người mang áo số $1$ đã rời đi vào lượt trước và biết đây là lượt mình sẽ rời đi nên \texttt{solveCitizen(\{1\}, \{\{1\}\})} trả về \textbf{true}. 
+    \end{itemize}
+\item Kết thúc $2$ lượt, tất cả người dân đã rời khỏi vương quốc.
+\end{itemize}
+
+\end{problem}
+

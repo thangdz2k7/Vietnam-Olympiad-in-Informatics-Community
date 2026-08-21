@@ -1,0 +1,90 @@
+\begin{tutorial}{TST 2026 - Bài 3}
+
+\textit{Trong solution, từ "lá bài" sẽ được viết thành từ "đỉnh" để phù hợp với các định nghĩa về cây. Ví dụ: Cụm từ "đánh số lên các lá bài" sẽ được viết thành "đánh số lên các đỉnh trên cây".}
+
+\textbf{Một số định nghĩa:}
+\begin{itemize}
+   \item Thứ tự DFS/BFS: Thứ tự duyệt các đỉnh trên cây theo phương pháp duyệt DFS/BFS. Đỉnh đầu tiên được duyệt luôn là gốc cây.
+\end{itemize}
+
+\textbf{Subtask $1$ ($10\%$ số điểm): $N\le 9$, đảm bảo cây là đường thẳng}
+
+Với điều kiện cây là đường thẳng, ta có thể xây dựng chiến thuật cho Alice và Bob như sau:
+\begin{itemize}
+   \item Đối với Alice, cô sẽ đánh số lên các đỉnh trên cây tương ứng với thứ tự DFS. Tức là với đỉnh được thăm đầu tiên, cô sẽ đánh số $1$, đỉnh được thăm thứ hai sẽ được đánh số $2$, đỉnh được thăm thứ ba sẽ được đánh số $3$, ...
+   \item Đối với Bob, dựa vào các số Alice đã đánh trên các đỉnh cùng với cấu trúc cây đặc biệt của subtask này, anh dễ dàng xác định được thứ tự DFS của cây ban đầu và có thể dựng lại được cây.
+\end{itemize}
+
+Cách này sẽ luôn đảm bảo $M=N\le 9$ và giành được $100\%$ số điểm cho subtask $1$.
+
+\textbf{Subtask $2$ ($90\%$ số điểm): Không có ràng buộc gì thêm}
+
+Editioral sẽ nói qua hai cách giải cho subtask này:
+
+\textbf{Solution 1 ($\ge 50\%$ số điểm tối đa)}
+
+Trước hết, ta sẽ nói về một tính chất đặc biệt của thứ tự BFS:
+\begin{itemize}
+   \item Nếu gọi $t_i$ là thời điểm đỉnh thứ $i$ được thăm theo thứ tự BFS, $root_i$ là cha trực tiếp của đỉnh thứ $i$.
+   \item Khi đó, ta dễ dàng nhận thấy: Với mọi cặp số $(i,j)$ thỏa mãn $t_i<t_j$ và $i,j$ không phải gốc cây thì $t_{root_i}\le t_{root_j}$.
+   \item Ta cũng có thể biến đổi từ tính chất trên thành BĐT sau: $t_i+t_{root_i}<t_j+t_{root_j}$ ($\dagger$).
+\end{itemize}
+
+Ta có thể áp dụng tính chất đặc biệt trên để xây dựng chiến thuật cho Alice và Bob như sau:
+\begin{itemize}
+   \item Đối với Alice, cô sẽ đánh số $1$ lên gốc cây. Với các đỉnh $i$ còn lại, Alice đánh số $t_i+t_{root_i}$ lên đỉnh đó.
+   \item Đối với Bob, anh có thể dựa vào tính chất ($\dagger$) được nhắc đến ở trên để xác định thứ tự BFS của cây ban đầu. Sau đó, với mọi đỉnh không phải gốc cây, anh cũng có thể xác định được các cha trực tiếp của chúng từ số đã được đánh trên các đỉnh. Dựa vào các thông tin đã có, Bob có thể dựng lại được cây.
+\end{itemize}
+
+Trong trường hợp tệ nhất, cách làm này sẽ cho giá trị $M$ lớn nhất bằng $M=2max_N-1=2\times 32-1=63$. Với cách chấm điểm của bài toán này, bạn sẽ được ít nhất $50\%$ số điểm cho subtask $2$. Đây cũng là cách làm của đa số thí sinh trong kỳ thi TST 2026 chính thức, có thể thấy tất cả thí sinh làm cách này đều sẽ được $56.8/100$ điểm.
+
+\textbf{Solution 2 ($100\%$ số điểm)}
+
+Với các dạng bài two-step như bài này, ta có thể tiếp cận bài toán bằng cách đặt ra hai câu hỏi như sau:
+\begin{itemize}
+   \item Làm sao để xác định được tính phân biệt của dữ liệu cần encode? (trong bài toán này, dữ liệu cần encode sẽ là cấu trúc cây mà khán giả đã vẽ ban đầu)
+   \item Làm sao để encode một cách tối ưu? (trong bài toán này, phần encode sẽ là việc Alice đánh số lên các đỉnh trên cây)
+\end{itemize}
+
+Bắt đầu từ câu hỏi đầu tiên, ta có thể mô tả lại yêu cầu trên thành bài toán xác định thứ tự từ điển của cấu trúc cây trong tất cả cấu trúc cây hợp lệ có thể tồn tại. Với các dạng bài liên quan đến thứ tự từ điển, ta sẽ tiếp cận từ bài toán con đơn giản hơn: Đếm số trạng thái hợp lệ từ bất kỳ trạng thái tiền tố đã có trước đó (*).
+
+Theo dữ kiện đề bài, các cấu trúc cây hợp lệ phải có bậc tối đa không quá $8$, đồng thời số đỉnh tối đa cùng bậc cũng không được quá $8$. Vì thế, ta có thể xem xét phương án dựng cây như sau:
+\begin{itemize}
+   \item Bắt đầu từ gốc cây, tạo một số đỉnh bậc $1$ và nối với gốc cây.
+   \item Tiếp theo, tạo một số đỉnh bậc $2$ và nối với các đỉnh bậc $1$ vừa mới tạo.
+   \item Tạo một số đỉnh bậc $3$ và nối với các đỉnh bậc $2$ vừa mới tạo.
+   \item ...
+\end{itemize}
+
+Với phương án dựng cây này, ta đã có thể xác định định nghĩa "thứ tự từ điển" và "trạng thái tiền tố" một cách rõ ràng hơn. Tới đây, ta có thể giải quyết bài toán con (*) bằng quy hoạch động. Gọi:
+\begin{itemize}
+   \item $cnt_{x,y}$ ($1\le x,y\le 8$) là số cách nối cha nếu bậc thứ $k-1$ có $x$ đỉnh, bậc thứ $k$ có $y$ đỉnh.
+   \item \textbf{Lưu ý}: Các cách nối cha là hoán vị của nhau sẽ được coi là cùng một cách.
+   \item $dp_{i,j,k}$ ($0\le i\le 8,1\le j\le 32,1\le k\le min(8,j)$) là số lượng cấu trúc cây thỏa mãn nếu bắt đầu xét từ bậc thứ $i$, số lượng đỉnh tính từ bậc thứ $i$ trở đi là $j$, và số lượng đỉnh có bậc bằng $i$ là $k$.
+\end{itemize}
+
+Khi đó:
+\begin{itemize}
+   \item $dp_{i,j,k}=1$ nếu $j=k$.
+   \item $dp_{i,j,k}=\sum_{x=1}^{min(8,j-k)} dp_{i+1,j-k,x}\times cnt_{k,x}$ trong các trường hợp còn lại.
+\end{itemize}
+
+Các giá trị $cnt_{x,y}$ có thể được tính bằng công thức $C^y_{x+y-1}$. Trạng thái QHĐ trên hoàn toàn có thể xử lý bằng đệ quy có nhớ. Như vậy bài toán con (*) đã được giải quyết xong.
+
+Trở lại vấn đề được nhắc đến ở trên, để xác định thứ tự từ điển của cấu trúc cây, ngoài việc tính các trạng thái QHĐ, ta cần làm thêm một thao tác: Với mọi cặp số $(x,y)$ ($1\le x,y\le 8$), ta tạo một tập lưu tất cả cách nối cha nếu bậc thứ $k-1$ có $x$ đỉnh, bậc thứ $k$ có $y$ đỉnh.
+
+Khi đã tiền xử lý xong, ta có thể dễ dàng giải quyết vấn đề trên. Như vậy câu hỏi đầu tiên đã được giải quyết xong!
+
+Tiếp tục với câu hỏi thứ hai, làm sao để encode tối ưu? Ta thấy việc chèn thêm một số đỉnh với bậc tương ứng và nối đỉnh tương đương với việc dựng một thứ tự BFS. Như vậy ta nên tạo dãy encode theo hướng như sau: Nếu số được đánh càng lớn thì đỉnh đó được thăm càng muộn theo thứ tự BFS.
+
+Từ việc xác định thứ tự từ điển của cấu trúc cây như trên, ta có thể dựng một dãy số có giá trị tăng dần trước, và dựa vào thứ tự BFS để đánh số lần lượt. Có thể thấy việc dựng dãy số trên lại là một bài toán liên quan đến thứ tự từ điển. Vì cách làm khá đơn giản, phần này mình sẽ nhường các bạn. Câu hỏi thứ hai đã được giải quyết xong!
+
+Đối với việc decode, chúng ta chỉ cần dựa vào cách encode để làm quy trình ngược lại là xong. Tức là:
+\begin{itemize}
+   \item Thay vì dựng dãy số encode từ thứ tự từ điển cho trước, ta tìm thứ tự từ điển của dãy số cần decode.
+   \item Thay vì tìm thứ tự từ điển của cấu trúc cây, ta dựng cấu trúc cây từ thứ tự từ điển đã cho.
+\end{itemize}
+
+Khi chạy thử mảng $dp$, có thể thấy số trạng thái tương ứng với cấu trúc cây luôn nhỏ hơn hoặc bằng số cách encode. Số cách encode với giá trị $n$ cho trước sẽ bằng số dãy số $a$ tăng dần độ dài $n$ sao cho $a_i\le 56$ với mọi $i$ từ $1$ đến $n$ (tức là $C_{56}^n$). Vì thế nên cách này sẽ giúp bạn đạt được điểm tối đa.
+
+\end{tutorial}

@@ -1,0 +1,38 @@
+\textbf{Chi tiết cài đặt}
+
+Thí sinh cần cài đặt hàm sau:
+
+\begin{lstlisting}
+vector<int> solve(int N, int K, int Q, const vector<int>& A, const vector<int>& B,
+                                       const vector<int>& U, const vector<int>& V,
+                                       const vector<int>& X, const vector<int>& Y);
+\end{lstlisting}
+
+\begin{itemize}
+   \item $N$: Số khu dân cư trên hệ thống đô thị của thành phố XYZ.
+   \item $K$: Số tuyến đường trọng điểm được ban quy hoạch đô thị chọn.
+   \item $Q$: Số ngày ban quy hoạch đô thị xét tuyến đường tiềm năng.
+   \item $A,B$: Hai mảng gồm $N-1$ phần tử, trong đó $A_i$ và $B_i$ ($0\le i\le N-2$) đại diện cho hai khu dân cư có con đường thứ $i$ nối trực tiếp trên hệ thống đô thị.
+   \item $U,V$: Hai mảng gồm $K$ phần tử, trong đó $U_i$ và $V_i$ ($0\le i\le K-1$) đại diện cho hai khu dân cư bắt đầu và kết thúc của tuyến đường trọng điểm thứ $i$.
+   \item $X,Y$: Hai mảng gồm $Q$ phần tử, trong đó $X_i$ và $Y_i$ ($0\le i\le Q-1$) đại diện cho hai khu dân cư bắt đầu và kết thúc của tuyến đường tiềm năng ban quy hoạch chọn trong ngày thứ $i$.
+   \item Hàm này cần trả về một mảng $ans$ bao gồm $Q$ phần tử, trong đó $ans_i$ ($0\le i\le Q-1$) là số trạm tối thiểu cần phải đặt nếu xét ngày thứ $i$.
+   \item Hàm này sẽ được gọi $T$ lần, mỗi lần gọi tương ứng với một trường hợp thử nghiệm.
+\end{itemize}
+
+\textbf{Lưu ý:}
+\begin{itemize}
+   \item Chương trình của bạn cần phải khai báo thư viện \texttt{"cstationlib.h"} ở đầu.
+   \item Trong chương trình, thí sinh được phép cài đặt các biến, các hàm toàn cục, nhưng không được phép có hàm \texttt{main()}.
+   \item Chương trình của bạn không được tương tác trực tiếp với đầu vào chuẩn (stdin) và đầu ra chuẩn (stdout).
+\end{itemize}
+
+\textbf{Ràng buộc}
+
+\begin{itemize}
+   \item $1\le N,K,Q\le 10^5$
+   \item $0\le A_i,B_i\le N-1$ với mọi $i$ từ $0$ đến $N-2$
+   \item $0\le U_i,V_i\le N-1$ với mọi $i$ từ $0$ đến $K-1$
+   \item $0\le X_i,Y_i\le N-1$ với mọi $i$ từ $0$ đến $Q-1$
+   \item $A_i\ne B_i$ với mọi $i$ từ $0$ đến $N-2$
+   \item $\sum_N,\sum_K,\sum_Q\le 2\times 10^5$
+\end{itemize}

@@ -1,0 +1,13 @@
+Alice có một dãy số $A$ gồm $N$ phần tử, các phần tử được đánh số từ $0$ đến $N-1$. Ban đầu, với mọi $i$ từ $0$ đến $N-1$, $A_i=i$. Ngoài ra, Alice có một danh sách gồm $M$ thao tác, được đánh số từ $0$ đến $M-1$. Với thao tác thứ $i$ ($0\le i\le M-1$):
+\begin{itemize}
+   \item Alice sẽ chọn phần tử \textbf{có giá trị $H_i$} và chuyển nó về đầu dãy số. Các phần tử đứng trước $H_i$ sẽ lùi sang bên phải một vị trí.
+\end{itemize}
+
+Alice đưa hai dãy số $A$ và $H$ cho Bob, sau đó hỏi Bob $Q$ câu hỏi. Với câu hỏi thứ $i+1$ ($0\le i\le Q-1$):
+\begin{itemize}
+   \item Alice đưa cho Bob ba số nguyên $L_i,R_i,P_i$.
+   \item Alice sẽ thực hiện tất cả các thao tác theo thứ tự, nhưng không thực hiện các thao tác nằm trong đoạn $[L_i;R_i]$ \textbf{trên dãy ban đầu}.
+   \item Bob cần xác định chính xác vị trí của phần tử có giá trị $P_i$ sau khi Alice đã thực hiện $M-(R_i-L_i+1)$ thao tác trên dãy ban đầu.
+\end{itemize}
+
+\textbf{Yêu cầu:} Cho hai dãy số $A,H$ và $Q$ câu hỏi, hãy giúp Bob viết một chương trình trả lời các câu hỏi do Alice đưa ra.

@@ -1,0 +1,67 @@
+\textbf{Chi tiết cài đặt}
+
+Thí sinh cần cài đặt hàm sau:
+
+\begin{lstlisting}
+void solve(int N);
+\end{lstlisting}
+
+\begin{itemize}
+   \item $N$: Số đỉnh của cây bạn được cho trước.
+   \item Hàm này cần mô tả cách chương trình của bạn hoạt động để thực hiện các yêu cầu của bài toán đã được mô tả ở trên.
+   \item Hàm này được gọi $T$ lần trong một test, mỗi lần gọi tương ứng với một trường hợp thử nghiệm.
+\end{itemize}
+
+Trong hàm \texttt{solve()}, thí sinh được phép gọi các hàm sau:
+
+\begin{lstlisting}
+void print(int i);
+\end{lstlisting}
+
+\begin{itemize}
+   \item $i$: Chỉ số của ô nhớ cần in ra. Cần phải đảm bảo $0\le i\le 1999$.
+   \item Hàm này sẽ mô phỏng việc in ra giá trị của ô nhớ thứ $i$ ra màn hình.
+\end{itemize}
+
+\begin{lstlisting}
+void sub(int i, int j, int k);
+\end{lstlisting}
+
+\begin{itemize}
+   \item $i,j,k$: Chỉ số của các ô nhớ cần thiết để thực hiện thao tác cập nhật. Cần phải đảm bảo $0\le i,j,k\le 1999$ và các giá trị này không nhất thiết phải đôi một phân biệt.
+   \item Hàm này sẽ thực hiện cập nhật $A_k:=A_i-A_j$.
+\end{itemize}
+
+\begin{lstlisting}
+void mul(int i, int j, int k);
+\end{lstlisting}
+
+\begin{itemize}
+   \item $i,j,k$: Chỉ số của các ô nhớ cần thiết để thực hiện thao tác cập nhật. Cần phải đảm bảo $0\le i,j,k\le 1999$ và các giá trị này không nhất thiết phải đôi một phân biệt.
+   \item Hàm này sẽ thực hiện cập nhật $A_k:=A_i\times A_j$.
+\end{itemize}
+
+\begin{lstlisting}
+void cmp(int i, int j, int k);
+\end{lstlisting}
+
+\begin{itemize}
+   \item $i,j,k$: Chỉ số của các ô nhớ cần thiết để thực hiện thao tác cập nhật. Cần phải đảm bảo $0\le i,j,k\le 1999$ và các giá trị này không nhất thiết phải đôi một phân biệt.
+   \item Hàm này sẽ thực hiện cập nhật $A_k:=1$ nếu $A_i=A_j$ và $A_k:=0$ trong trường hợp ngược lại.
+\end{itemize}
+
+\textbf{Lưu ý:}
+\begin{itemize}
+   \item Chương trình của bạn cần phải khai báo thư viện \texttt{"vmachinelib.h"} ở đầu.
+   \item Với mỗi trường hợp thử nghiệm tương ứng với một lần gọi hàm \texttt{solve()}, chương trình của bạn được phép thực hiện tối đa $4\times 10^6$ lệnh.
+   \item Trong chương trình, thí sinh được phép cài đặt các biến, các hàm toàn cục, nhưng không được phép có hàm \texttt{main()}.
+   \item Chương trình của bạn không được tương tác trực tiếp với đầu vào chuẩn (stdin) và đầu ra chuẩn (stdout).
+\end{itemize}
+
+\textbf{Ràng buộc}
+
+\begin{itemize}
+   \item $T \le 50$
+   \item $N \le 200$
+   \item Độ dài của dãy $A$ (kích thước của khe nhớ) luôn bằng $2000$
+\end{itemize}

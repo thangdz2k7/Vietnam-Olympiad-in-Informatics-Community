@@ -1,0 +1,13 @@
+Ở một vương quốc ABC, có một vị vua đang trị vì và cai quản $N$ người dân. Nhà vua muốn tổ chức một lễ hội ở ngoài vương quốc và cần đưa tất cả người dân rời khỏi vương quốc. Vì mỗi người cần làm các công việc khác nhau nên nhà vua đã bí mật đánh số các người dân từ $0$ đến $N-1$. Để thực hiện mong muốn của mình, nhà vua mỗi lần có thể chọn một nhóm người để rời khỏi vương quốc cùng lúc, tuy nhiên mỗi lần nhà vua chỉ có thể chọn tối đa $S$ người trong cùng một lượt. Thêm vào đó, nhà vua có $K$ cặp số được đánh số từ $0$ đến $K-1$, trong đó cặp số thứ $i$ ($0\le i\le K-1$) là cặp số $(U_i,V_i)$ tương ứng với việc nhà vua muốn người dân $U_i$ phải rời khỏi vương quốc trước người dân $V_i$. Vì không muốn người dân hoảng loạn, nhà vua không cho những người dân trong vương quốc biết $K$ cặp số trên.
+
+Nhà vua đã quyết định mời một nhà thông thái đến để giúp đỡ công việc trên sao cho mọi thứ có thể diễn ra thuận lợi nhất có thể. Kế hoạch của họ như sau:
+\begin{itemize}
+   \item Đầu tiên, nhà thông thái sẽ bàn bạc với những người dân để họ có phương án rời khỏi vương quốc thuận lợi. Lúc này nhà thông thái vẫn chưa biết giá trị $K$ cặp số của nhà vua.
+   \item Sau khi đã bàn bạc với người dân, nhà thông thái sẽ được biết giá trị của $K$ cặp số đó. Nhà thông thái cần chuẩn bị $N$ chiếc áo choàng tương ứng với $N$ người dân, mỗi chiếc áo choàng được nhà thông thái đánh một số nguyên dương.
+   \item Tiếp theo, nhà thông thái sẽ phát $N$ chiếc áo choàng cho $N$ người dân tương ứng. Chiếc áo choàng rất kín, đảm bảo mỗi người dân chỉ có thể nhìn thấy số được đánh trên các chiếc áo choàng của những người dân khác \textbf{nhưng họ lại không thể thấy số được đánh trên áo choàng của chính mình}. Những người dân không được bàn bạc và trao đổi với nhau trong suốt quá trình rời khỏi vương quốc.
+   \item Nhà vua sẽ thực hiện $N$ lượt, mỗi lượt nhà vua sẽ hỏi tất cả người dân có ai muốn rời khỏi vương quốc trong lượt này không. Mỗi lượt, sau khi biểu quyết, nhà vua sẽ chọn tất cả người dân biểu quyết đồng ý rời khỏi vương quốc. Trong một lượt có thể không ai rời khỏi vương quốc, nhưng cần đảm bảo mỗi lượt chỉ tối đa $S$ người được phép rời khỏi vương quốc cùng lúc và phải thỏa mãn điều kiện $K$ cặp số của nhà vua.
+\end{itemize}
+
+Kế hoạch được cho là thành công khi tất cả người dân có thể rời khỏi vương quốc thuận lợi. Nhà vua sẽ càng trầm trồ trước tài năng của nhà thông thái nếu số lớn nhất được đánh trên những chiếc áo choàng càng nhỏ càng tốt.
+
+\textbf{Yêu cầu:} Hãy viết một chương trình mô phỏng lại quá trình nhà thông thái bàn bạc, chuẩn bị áo choàng và quá trình những người dân rời khỏi vương quốc sao cho số lớn nhất được đánh trên những chiếc áo choàng nhỏ nhất có thể.

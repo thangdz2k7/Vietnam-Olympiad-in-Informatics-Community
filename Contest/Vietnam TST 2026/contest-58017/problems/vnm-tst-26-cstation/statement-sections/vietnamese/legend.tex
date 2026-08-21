@@ -1,0 +1,14 @@
+Hệ thống đô thị của thành phố XYZ có thể được mô phỏng dưới dạng cây gồm $N$ đỉnh và $N-1$ cạnh. Mỗi đỉnh trên cây tương ứng với một khu dân cư, được đánh số từ $0$ đến $N-1$. Mỗi cạnh trên cây tương ứng với một con đường, được đánh số từ $0$ đến $N-2$. Trong đó, con đường thứ $i$ ($0\le i\le N-2$) nối trực tiếp hai khu dân cư $A_i$ và $B_i$.
+
+Ban quy hoạch đô thị đã chọn ra $K$ tuyến đường để làm các \textbf{tuyến đường trọng điểm}. Các tuyến đường này được đánh số từ $0$ đến $K-1$. Trong đó, tuyến đường trọng điểm thứ $i$ ($0\le i\le K-1$) tương ứng với đường đi ngắn nhất xuất phát từ khu dân cư $U_i$ và kết thúc tại khu dân cư $V_i$.
+
+Trong $Q$ ngày tiếp theo, mỗi ngày ban quy hoạch đô thị sẽ chọn ra một \textbf{tuyến đường tiềm năng}. Trong ngày thứ $i$ ($0\le i\le Q-1$), tuyến đường tiềm năng mà ban quy hoạch chọn sẽ là đường đi ngắn nhất xuất phát từ khu dân cư $X_i$ và kết thúc tại khu dân cư $Y_i$. Tuyến đường này trong ngày thứ $i$ sẽ được coi là \textbf{tuyến đường trọng điểm thứ $K$}. Khi kết thúc ngày, tuyến đường tiềm năng trong ngày đó sẽ không được coi là tuyến đường trọng điểm nữa.
+
+Với mỗi ngày, ban quy hoạch muốn chọn ra một số khu dân cư và đặt trạm tại các khu dân cư đó sao cho:
+\begin{itemize}
+   \item Với mọi tuyến đường trọng điểm được đánh số từ $0$ đến $K$, luôn có \textbf{ít nhất} một trạm được đặt trên các khu dân cư nằm trên tuyến đường đó.
+\end{itemize}
+
+\textbf{Lưu ý:} Ban quy hoạch chỉ muốn mô phỏng phương án đặt trạm. Trên thực tế, ban quy hoạch sẽ không xây dựng bất kỳ trạm nào trong suốt thời gian xét các tuyến đường tiềm năng.
+
+\textbf{Yêu cầu:} Giả sử bạn là một thành viên của ban quy hoạch đô thị, hãy viết một chương trình để giải quyết vấn đề trên.

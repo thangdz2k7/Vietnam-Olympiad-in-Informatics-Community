@@ -1,0 +1,17 @@
+Có một đống bóng gồm $N$ quả, các quả bóng được đánh số từ $0$ đến $N-1$. Mỗi quả bóng trong đống có thể có màu từ $0$ đến $K-1$, trong đó quả bóng thứ $i$ ($0\le i\le N-1$) có màu $A_i$ ($0\le A_i\le K-1$). Đảm bảo với mọi $j$ từ $0$ đến $K-1$, tồn tại \textbf{ít nhất} một quả bóng trong đống bóng có màu $j$.
+
+Bạn được biết trước giá trị của $N$, nhưng bạn lại \textbf{không biết chính xác} giá trị của $K$. Bạn không biết trạng thái màu của các quả bóng trông thế nào, và bạn muốn tìm cách xác định nó. Để làm được việc này, bạn được phép thực hiện một số câu hỏi. Với mỗi câu hỏi:
+\begin{itemize}
+   \item Bạn chọn một tập con gồm một số quả bóng trong $N$ quả.
+   \item Sau đó, bạn sẽ được biết \textbf{số lượng màu khác nhau} xuất hiện trong các quả bóng được chọn có lớn hơn hoặc bằng $\lfloor \frac{K+1}2\rfloor$ hay không (trong đó, $\lfloor x\rfloor$ là số nguyên gần nhất nhỏ hơn hoặc bằng $x$).
+\end{itemize}
+
+\textbf{Yêu cầu:} Hãy viết một chương trình tương tác mô phỏng quá trình xác định trạng thái màu của các quả bóng. Vì có thể có nhiều cấu hình cho ra cùng một kết quả với mọi câu hỏi so với cấu hình gốc, bạn chỉ cần xác định một cấu hình \textbf{đẳng cấu} với cấu hình gốc. Cụ thể:
+\begin{itemize}
+   \item Gọi $B$ là cấu hình (trạng thái màu của các quả bóng) mà bạn dự đoán. Khi đó với mọi cặp số $(i,j)$ ($0\le i,j\le N-1,i\ne j$):
+   \begin{itemize}
+      \item Nếu $A_i=A_j$ thì $B_i=B_j$.
+      \item Nếu $A_i\ne A_j$ thì $B_i\ne B_j$.
+   \end{itemize}
+   \item \textbf{Ví dụ:} Hai cấu hình \texttt{{0, 1, 2, 0, 0, 1}} và \texttt{{1, 2, 0, 1, 1, 2}} được xem như là \textbf{đẳng cấu} với nhau.
+\end{itemize}

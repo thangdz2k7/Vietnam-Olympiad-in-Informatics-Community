@@ -1,0 +1,35 @@
+\textbf{Chi tiết cài đặt}
+
+Thí sinh cần cài đặt hàm sau:
+
+\begin{lstlisting}
+vector<int> solve(int N, int M, int Q, const vector<int>& H, const vector<int>& L,
+                                       const vector<int>& R, const vector<int>& P);
+\end{lstlisting}
+
+\begin{itemize}
+    \item $N$: Số lượng phần tử trong dãy số $A$.
+    \item $M$: Số thao tác trong dãy thao tác $H$ của Alice.
+    \item $Q$: Số câu hỏi Alice hỏi Bob.
+    \item $H$: Mảng gồm $M$ phần tử, trong đó $H_i$ ($0\le i\le M-1$) đại diện cho giá trị của phần tử mà Alice sẽ dịch chuyển trong thao tác thứ $i$.
+    \item $L, R$: Hai mảng gồm $Q$ phần tử, trong đó $L_i$ và $R_i$ ($0\le i\le Q-1$) đại diện cho đoạn truy vấn mà Alice sẽ không thực hiện khi xét câu hỏi thứ $i+1$.
+    \item $P$: Mảng gồm $Q$ phần tử, trong đó $P_i$ ($0\le i\le Q-1$) đại diện cho giá trị của phần tử Bob cần xác định vị trí trong câu hỏi thứ $i+1$.
+    \item Hàm này cần trả về một mảng $ans$ bao gồm $Q$ phần tử, trong đó $ans_i$ ($0\le i\le Q-1$) là đáp án của câu hỏi thứ $i+1$.
+    \item Hàm này sẽ được gọi \textbf{một lần duy nhất} với mỗi test của bài.
+\end{itemize}
+
+\textbf{Lưu ý:}
+\begin{itemize}
+    \item Chương trình của bạn cần phải khai báo thư viện \texttt{sgamelib.h} ở đầu.
+    \item Trong chương trình, thí sinh được phép cài đặt các biến, các hàm toàn cục, nhưng không được phép có hàm \texttt{main()}.
+   \item Chương trình của bạn không được tương tác trực tiếp với đầu vào chuẩn (stdin) và đầu ra chuẩn (stdout).
+\end{itemize}
+
+\textbf{Ràng buộc}
+
+\begin{itemize}
+    \item $1\le N, M, Q \le 2\times 10^5$
+    \item $0\le H_i \le N-1$ với mọi $i$ từ $0$ đến $M-1$
+    \item $0\le L_i \le R_i \le M-1$ với mọi $i$ từ $0$ đến $Q-1$
+    \item $0\le P_i \le N-1$ với mọi $i$ từ $0$ đến $Q-1$
+\end{itemize}

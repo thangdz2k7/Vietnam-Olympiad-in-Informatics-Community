@@ -1,0 +1,124 @@
+\begin{problem}{TST 2026 - Bài 5 }{standard input}{standard output}{2 seconds}{1024 megabytes}
+
+Cho một cây gồm $N$ đỉnh và $N-1$ cạnh. Các đỉnh được đánh số từ $1$ đến $N$, các cạnh được đánh số từ $1$ đến $N-1$. Trong đó, cạnh thứ $i$ $(1 \le i \le N-1)$ nối trực tiếp giữa hai đỉnh $U_i$ và $V_i$, với $U_i$ là cha và $V_i$ là con.
+
+Có một khe nhớ lưu trữ số, các ô nhớ trong khe được đánh số từ $0$ đến $1999$, mỗi ô nhớ lưu trữ một số nguyên $16$-bit (có thể có giá trị trong đoạn $[-32768;32767]$). Có thể coi khe nhớ đó là dãy số $A$ bao gồm $2000$ phần tử, các phần tử được đánh số từ $0$ đến $1999$.
+
+Trong khe nhớ đó, thông tin về các cạnh trên cây ban đầu được lưu trữ như sau:
+\begin{itemize}
+    \item Với mọi $i$ từ $1$ đến $N-1$, $A_{2i-2} = U_i$, $A_{2i-1} = V_i$.
+    \item Với các ô nhớ còn lại, $A_i = 0$.
+\end{itemize}
+
+Bạn cần viết ra một chương trình thao tác với các ô trong khe nhớ. Bạn được phép sử dụng các lệnh như sau:
+\begin{itemize}
+    \item \texttt{print(i)}: In ra giá trị của $A_i$ ra màn hình.
+    \item \texttt{sub(i,j,k)}: Thực hiện cập nhật $A_k := A_i - A_j$.
+    \item \texttt{mul(i,j,k)}: Thực hiện cập nhật $A_k := A_i \times A_j$.
+    \item \texttt{cmp(i,j,k)}: Thực hiện so sánh hai giá trị $A_i$ và $A_j$, nếu $A_i = A_j$ thì cập nhật $A_k := 1$. Ngược lại, cập nhật $A_k := 0$.
+\end{itemize}
+
+\textbf{Lưu ý:}
+\begin{itemize}
+    \item Với mọi thao tác, các giá trị không nhất thiết phải đôi một phân biệt, nhưng phải thỏa mãn $0 \le i,j,k \le 1999$.
+    \item Chương trình của bạn không được truy cập trực tiếp vào các ô nhớ mà chỉ được thực hiện các lệnh đã được mô tả ở trên.
+    \item Các phép toán thực hiện trên chương trình của bạn có thể xảy ra tràn số như một chương trình bình thường, nếu kết quả vượt quá kiểu dữ liệu \texttt{short} trong C++ (số nguyên $16$-bit).
+\end{itemize}
+
+Chương trình của bạn cần phải thỏa mãn điều kiện sau:
+\begin{itemize}
+    \item Chương trình cần in ra các số nguyên dương, trong đó các số phải có giá trị từ $1$ đến $N$, mỗi số nguyên dương được in ra duy nhất một lần.
+    \item Xét thứ tự in các số, với mọi cặp đỉnh $(a,b)$ ($1\le a,b\le N$) sao cho $a$ là cha của $b$ thì $a$ phải được in ra trước $b$.
+\end{itemize}
+
+\textbf{Yêu cầu:} Hãy viết một chương trình thực hiện yêu cầu của bài toán với những lệnh bạn được phép sử dụng.
+
+
+\InputFile
+\textbf{Chi tiết cài đặt}
+
+Thí sinh cần cài đặt hàm sau:
+
+\begin{lstlisting}
+void solve(int N);
+\end{lstlisting}
+
+\begin{itemize}
+   \item $N$: Số đỉnh của cây bạn được cho trước.
+   \item Hàm này cần mô tả cách chương trình của bạn hoạt động để thực hiện các yêu cầu của bài toán đã được mô tả ở trên.
+   \item Hàm này được gọi $T$ lần trong một test, mỗi lần gọi tương ứng với một trường hợp thử nghiệm.
+\end{itemize}
+
+Trong hàm \texttt{solve()}, thí sinh được phép gọi các hàm sau:
+
+\begin{lstlisting}
+void print(int i);
+\end{lstlisting}
+
+\begin{itemize}
+   \item $i$: Chỉ số của ô nhớ cần in ra. Cần phải đảm bảo $0\le i\le 1999$.
+   \item Hàm này sẽ mô phỏng việc in ra giá trị của ô nhớ thứ $i$ ra màn hình.
+\end{itemize}
+
+\begin{lstlisting}
+void sub(int i, int j, int k);
+\end{lstlisting}
+
+\begin{itemize}
+   \item $i,j,k$: Chỉ số của các ô nhớ cần thiết để thực hiện thao tác cập nhật. Cần phải đảm bảo $0\le i,j,k\le 1999$ và các giá trị này không nhất thiết phải đôi một phân biệt.
+   \item Hàm này sẽ thực hiện cập nhật $A_k:=A_i-A_j$.
+\end{itemize}
+
+\begin{lstlisting}
+void mul(int i, int j, int k);
+\end{lstlisting}
+
+\begin{itemize}
+   \item $i,j,k$: Chỉ số của các ô nhớ cần thiết để thực hiện thao tác cập nhật. Cần phải đảm bảo $0\le i,j,k\le 1999$ và các giá trị này không nhất thiết phải đôi một phân biệt.
+   \item Hàm này sẽ thực hiện cập nhật $A_k:=A_i\times A_j$.
+\end{itemize}
+
+\begin{lstlisting}
+void cmp(int i, int j, int k);
+\end{lstlisting}
+
+\begin{itemize}
+   \item $i,j,k$: Chỉ số của các ô nhớ cần thiết để thực hiện thao tác cập nhật. Cần phải đảm bảo $0\le i,j,k\le 1999$ và các giá trị này không nhất thiết phải đôi một phân biệt.
+   \item Hàm này sẽ thực hiện cập nhật $A_k:=1$ nếu $A_i=A_j$ và $A_k:=0$ trong trường hợp ngược lại.
+\end{itemize}
+
+\textbf{Lưu ý:}
+\begin{itemize}
+   \item Chương trình của bạn cần phải khai báo thư viện \texttt{"vmachinelib.h"} ở đầu.
+   \item Với mỗi trường hợp thử nghiệm tương ứng với một lần gọi hàm \texttt{solve()}, chương trình của bạn được phép thực hiện tối đa $4\times 10^6$ lệnh.
+   \item Trong chương trình, thí sinh được phép cài đặt các biến, các hàm toàn cục, nhưng không được phép có hàm \texttt{main()}.
+   \item Chương trình của bạn không được tương tác trực tiếp với đầu vào chuẩn (stdin) và đầu ra chuẩn (stdout).
+\end{itemize}
+
+\textbf{Ràng buộc}
+
+\begin{itemize}
+   \item $T \le 50$
+   \item $N \le 200$
+   \item Độ dài của dãy $A$ (kích thước của khe nhớ) luôn bằng $2000$
+\end{itemize}
+
+\Scoring
+\begin{center}
+  \begin{tabular}{|c|c|l|} \hline
+    \textbf{Subtask} & \textbf{Điểm} & \textbf{Giới hạn} \\ \hline
+    1 & $7$ & $N\le 10; A_{2i-2}=i,A_{2i-1}=i+1$ với mọi $i$ từ $1$ đến $N-1$ \\ \hline
+    2 & $10$ & $N\le 10$ \\ \hline
+    3 & $15$ & $N\le 30$, với mọi đỉnh $i$ từ $1$ đến $N$ có tối đa một đỉnh con trực tiếp \\ \hline
+    4 & $10$ & $N\le 30$ \\ \hline
+    5 & $10$ & $N\le 60$ \\ \hline
+    6 & $10$ & $N\le 100$ \\ \hline
+    7 & $10$ & $N\le 120$ \\ \hline
+    8 & $10$ & $N\le 150$ \\ \hline
+    9 & $18$ & Không có ràng buộc gì thêm \\ \hline
+  \end{tabular}
+\end{center}
+
+
+\end{problem}
+

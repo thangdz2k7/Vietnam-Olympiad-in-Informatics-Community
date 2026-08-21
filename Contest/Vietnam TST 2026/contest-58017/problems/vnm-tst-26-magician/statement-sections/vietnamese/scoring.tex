@@ -1,0 +1,25 @@
+\begin{center}
+  \begin{tabular}{|c|c|l|} \hline
+    \textbf{Subtask} & \textbf{Điểm} & \textbf{Giới hạn} \\ \hline
+    1 & $10$ & $N\le 9$, cây mà khán giả vẽ luôn đảm bảo là một đường thẳng \\ \hline
+    2 & $90$ & Không có ràng buộc gì thêm \\ \hline
+  \end{tabular}
+\end{center}
+
+\textbf{Cách tính điểm}
+
+Nếu trong bất kỳ trường hợp thử nghiệm nào, hàm \texttt{solveBob()} trả về danh sách kề không thỏa mãn với điều kiện đề bài, bạn sẽ không nhận được điểm cho test đó.
+
+Ngược lại, gọi $M$ là số nguyên dương lớn nhất được viết trên các lá bài của Alice trong tất cả trường hợp thử nghiệm. Khi đó điểm của bạn được tính theo công thức như sau:
+
+\begin{center}
+  \begin{tabular}{|c|c|} \hline
+    \textbf{Giá trị $M$} & \textbf{Phần trăm số điểm} \\ \hline
+    $M\le 56$ & $100\%$ \\ \hline
+    $M=57$ & $80\%$ \\ \hline
+    $58\le M\lt 88$ & $(176-2M)\%$ \\ \hline
+    $M\ge 88$ & $0\%$ \\ \hline
+  \end{tabular}
+\end{center}
+
+Điểm của một subtask bằng phần trăm điểm tối thiểu của một test trong subtask đó nhân với số điểm tối đa của subtask.

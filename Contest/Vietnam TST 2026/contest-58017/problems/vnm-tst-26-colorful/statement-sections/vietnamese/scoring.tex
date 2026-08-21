@@ -1,0 +1,25 @@
+\begin{center}
+  \begin{tabular}{|c|c|l|} \hline
+    \textbf{Subtask} & \textbf{Điểm} & \textbf{Giới hạn} \\ \hline
+    1 & $10$ & $N\le 10;K\le 3$ \\ \hline
+    2 & $20$ & $N\le 10$ \\ \hline
+    3 & $70$ & Không có ràng buộc gì thêm \\ \hline
+  \end{tabular}
+\end{center}
+
+\textbf{Cách tính điểm}
+
+Nếu trong bất kỳ trường hợp thử nghiệm nào, chương trình của bạn trả về cấu hình không thỏa mãn yêu cầu đề bài thì bạn sẽ không nhận được điểm cho test đó.
+
+Ngược lại, gọi $P$ là số lần gọi hàm \texttt{ask()} tối đa trong tất cả lần gọi hàm \texttt{solve()} của một test. Khi đó điểm của bạn được tính như sau:
+
+\begin{center}
+  \begin{tabular}{|c|c|} \hline
+    \textbf{Giá trị $P$} & \textbf{Phần trăm số điểm} \\ \hline
+    $P \le 1400$ & $100\%$ \\ \hline
+    $1400 \lt P \le 14000$ & $\frac{1400}P\times 100\%$ \\ \hline
+    $P \gt 14000$ & $0\%$ \\ \hline
+  \end{tabular}
+\end{center}
+
+Điểm của một subtask bằng phần trăm điểm tối thiểu của một test trong subtask đó nhân với số điểm tối đa của subtask.

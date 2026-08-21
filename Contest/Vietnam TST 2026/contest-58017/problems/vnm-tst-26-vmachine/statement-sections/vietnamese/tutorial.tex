@@ -1,0 +1,39 @@
+\LARGE{\textbf{Lời giải sử dụng tối đa 716240 thao tác}}
+
+Đầu tiên ta nhận thấy mỗi đỉnh $x$ khác gốc đều có đúng duy nhất một cạnh $(u_i, v_i)$ mà $x = v_i$, từ đây ta sẽ có một baseline như sau : 
+\begin{itemize}
+ \item Tìm đỉnh gốc $R$ (đỉnh không có bất kỳ cạnh $(u, v)$ nào mà $v = R$)
+ \item Dùng mảng đánh dấu $f_i = 0/1$ trên cạnh thứ $i$ xem ta được phép thăm $v_i$ hay chưa. ($1$ nếu có và $0$ ngược lại)
+\end{itemize}
+
+\Large{\textbf{Các thao tác tự tạo thêm}}
+
+\begin{lstlisting}
+void add(int i, int j, int k);
+\end{lstlisting}
+
+Hàm này gán $A_k := A_i + A_j$, ta dùng $3$ thao tác trừ.
+
+\begin{lstlisting}
+void isZero(int i, int j);
+\end{lstlisting}
+
+Hàm này gán $A_j := [A_i = 0]$. Ta có nhận xét $x = 0$ khi và chỉ khi $x = -x$, ta tốn $2$ thao tác.
+
+\begin{lstlisting}
+void conditionalCopy(int i, int j, int k);
+\end{lstlisting}
+
+Nếu $A_k = 1$ thì gán $A_i := A_j$. Ta sẽ dùng $A_i := A_i - (A_j - A_i) \cdot A_k$, ta tốn $3$ thao tác. 
+
+\Large{\textbf{Tìm gốc của cây}}
+
+Đầu tiên dựng lại $1, 2, \cdots, N$ ở $N$ khe nhớ, sau đó ta duyệt qua $N \cdot (N - 1)$ để đánh dấu đỉnh có cha hay không, sau đó tìm đỉnh duy nhất không có cha chính là gốc $R$.
+
+\Large{\textbf{Tìm cạnh đầu tiên thỏa mãn}}
+
+Mỗi lần ta in ra đỉnh $x$, ta sẽ cập nhật lại $f_i$ và những cạnh $(u_j, v_j)$ nào có $u_j = x$ xem liệu ta có thể bắt đầu đi cạnh này được chưa, sau đó tìm cạnh $(u_i, v_i)$ xuất hiện sớm nhất và có thểm thăm $v_i$.
+
+Ta dùng thêm khe nhớ ($P$) ban đầu gán $A_P := 1$, giờ ta sẽ coi phép nhân như một phép \textbf{AND} và xử lý dựa vào hàm \textbf{conditionalCopy}.
+
+Như vậy ta sẽ duyệt $(N - 1)^2$ và thêm các hệ số về chi phí tính toán nữa.
