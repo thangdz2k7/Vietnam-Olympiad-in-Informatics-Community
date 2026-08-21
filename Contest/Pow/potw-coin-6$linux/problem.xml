@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="6" short-name="potw-coin" url="https://polygon.codeforces.com/p9z7eHI/huyhau6a2/potw-coin">
+    <names>
+        <name language="vietnamese" value="Cân xu"/>
+    </names>
+    <statements>
+        <statement charset="UTF-8" language="vietnamese" mathjax="true" path="statements/vietnamese/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="vietnamese" mathjax="true" path="statements/.html/vietnamese/problem.html" type="text/html"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1" treat-points-from-checker-as-percent="true">
+        <testset name="tests">
+            <time-limit>3000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>26</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test description="File &quot;01&quot;" group="0" method="manual" points="0.0" sample="true"/>
+                <test description="File &quot;02&quot;" group="0" method="manual" points="0.0" sample="true"/>
+                <test description="File &quot;03&quot;" group="1" method="manual" points="0.0"/>
+                <test description="File &quot;04&quot;" group="1" method="manual" points="0.0"/>
+                <test description="File &quot;05&quot;" group="1" method="manual" points="0.0"/>
+                <test description="File &quot;06&quot;" group="1" method="manual" points="0.0"/>
+                <test description="File &quot;07&quot;" group="1" method="manual" points="6.0"/>
+                <test description="File &quot;08&quot;" group="2" method="manual" points="0.0"/>
+                <test description="File &quot;09&quot;" group="2" method="manual" points="16.0"/>
+                <test description="File &quot;10&quot;" group="3" method="manual" points="0.0"/>
+                <test description="File &quot;11&quot;" group="3" method="manual" points="0.0"/>
+                <test description="File &quot;12&quot;" group="3" method="manual" points="10.0"/>
+                <test description="File &quot;13&quot;" group="4" method="manual" points="0.0"/>
+                <test description="File &quot;14&quot;" group="4" method="manual" points="0.0"/>
+                <test description="File &quot;15&quot;" group="4" method="manual" points="0.0"/>
+                <test description="File &quot;16&quot;" group="4" method="manual" points="0.0"/>
+                <test description="File &quot;17&quot;" group="4" method="manual" points="0.0"/>
+                <test description="File &quot;18&quot;" group="4" method="manual" points="0.0"/>
+                <test description="File &quot;19&quot;" group="4" method="manual" points="0.0"/>
+                <test description="File &quot;20&quot;" group="4" method="manual" points="0.0"/>
+                <test description="File &quot;21&quot;" group="4" method="manual" points="0.0"/>
+                <test description="File &quot;22&quot;" group="4" method="manual" points="0.0"/>
+                <test description="File &quot;23&quot;" group="4" method="manual" points="0.0"/>
+                <test description="File &quot;24&quot;" group="4" method="manual" points="0.0"/>
+                <test description="File &quot;25&quot;" group="4" method="manual" points="0.0"/>
+                <test description="File &quot;26&quot;" group="4" method="manual" points="68.0"/>
+            </tests>
+            <groups>
+                <group feedback-policy="points" name="0" points="0.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="1" points="6.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="2" points="16.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="1"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="3" points="10.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="1"/>
+                        <dependency group="2"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="4" points="68.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="1"/>
+                        <dependency group="2"/>
+                        <dependency group="3"/>
+                    </dependencies>
+                </group>
+            </groups>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/checker.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker type="testlib">
+            <source path="files/checker.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <copy path="check.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <testset>
+                <test-count>4</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests>
+                    <test verdict="ok"/>
+                    <test verdict="ok"/>
+                    <test verdict="wrong-answer"/>
+                    <test verdict="wrong-answer"/>
+                </tests>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <testset>
+                    <test-count>0</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests/>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="accepted">
+                <source path="solutions/solution-noi-partial.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/solution-noi.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/solution-thangdz.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>

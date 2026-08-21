@@ -1,0 +1,37 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>C&acirc;n xu</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">C&acirc;n xu</DIV><DIV class="time-limit"><DIV class="property-title">time limit per test</DIV>3 seconds</DIV><DIV class="memory-limit"><DIV class="property-title">memory limit per test</DIV>1024 megabytes</DIV><DIV class="input-file input-standard"><DIV class="property-title">input</DIV>standard input</DIV><DIV class="output-file output-standard"><DIV class="property-title">output</DIV>standard output</DIV></DIV><DIV class="legend"><P>Bổn S&acirc;m c&oacute; $$$n$$$ đồng xu <SPAN class="tex-font-style-bf">kh&aacute;c nhau về trọng lượng</SPAN> v&agrave; một c&aacute;i c&acirc;n hai b&ecirc;n. Mỗi khi anh ta đặt hai đồng xu $$$x$$$ v&agrave; $$$y$$$ l&ecirc;n c&acirc;n, trọng lượng tương đối giữa ch&uacute;ng sẽ được hiển thị &mdash; tức l&agrave; anh ta biết được giữa $$$x$$$ v&agrave; $$$y$$$, đồng n&agrave;o nặng hơn.</P><P>Gọi <SPAN class="tex-font-style-bf">cấp bậc</SPAN> của đồng xu $$$x$$$ l&agrave; số lượng đồng xu <SPAN class="tex-font-style-it">kh&ocirc;ng nặng hơn</SPAN> đồng xu $$$x$$$ (bao gồm cả ch&iacute;nh n&oacute;). Do đ&oacute;, đồng xu nhẹ nhất c&oacute; cấp bậc l&agrave; $$$1$$$, đồng nhẹ nh&igrave; l&agrave; $$$2$$$, ..., v&agrave; đồng nặng nhất c&oacute; cấp bậc l&agrave; $$$n$$$.</P><P>Sẽ c&oacute; $$$m$$$ lần c&acirc;n. Với mỗi đồng xu, h&atilde;y x&aacute;c định sau <SPAN class="tex-font-style-bf">lần c&acirc;n thứ $$$m$$$</SPAN> th&igrave; c&oacute; thể chắc chắn biết cấp bậc của đồng xu đ&oacute;.</P></DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Input</DIV><P></P><P>D&ograve;ng đầu ti&ecirc;n nhập hai số nguy&ecirc;n $$$n, m$$$.</P><P>Tiếp theo l&agrave; $$$m$$$ d&ograve;ng, d&ograve;ng thứ $$$i$$$ nhập hai số nguy&ecirc;n $$$x, y$$$, cho biết kết quả lần c&acirc;n thứ $$$i$$$ l&agrave; <SPAN class="tex-font-style-bf">đồng xu $$$x$$$ nặng hơn đồng xu $$$y$$$</SPAN>.</P><P>Đảm bảo rằng c&aacute;c kết quả c&acirc;n <SPAN class="tex-font-style-bf">kh&ocirc;ng m&acirc;u thuẫn</SPAN> với nhau.</P></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Output</DIV><P></P><P>In ra một d&ograve;ng gồm $$$n$$$ số nguy&ecirc;n.</P><P>Số thứ $$$i$$$ l&agrave; <SPAN class="tex-font-style-bf">lần c&acirc;n sớm nhất</SPAN> sau đ&oacute; c&oacute; thể x&aacute;c định chắc chắn <SPAN class="tex-font-style-bf">cấp bậc của đồng xu $$$i$$$</SPAN>.</P><P>Nếu <SPAN class="tex-font-style-bf">kh&ocirc;ng thể x&aacute;c định</SPAN>, in <SPAN class="tex-font-style-tt">-1</SPAN> tại vị tr&iacute; đ&oacute;.</P></DIV><P></P><P></P><DIV class="scoring"><DIV class="section-title">Scoring</DIV><P></P><P><SPAN class="tex-font-style-bf">Giới hạn dữ liệu</SPAN></P><P></P><UL> <LI> $$$2 \le n \le 200{,}000$$$ </LI><LI> $$$1 \le m \le 800{,}000$$$ </LI><LI> $$$1 \le x, y \le n,\ x \ne y$$$ </LI></UL><P></P><P><SPAN class="tex-font-style-bf">Subtask</SPAN></P><P></P><UL> <LI> Subtask 1 (6 điểm): $$$n \le 7,\ m \le 20$$$ </LI><LI> Subtask 2 (16 điểm): $$$n \le 100,\ m \le 400$$$ </LI><LI> Subtask 3 (10 điểm): $$$n \le 1000,\ m \le 4000$$$ </LI><LI> Subtask 4 (68 điểm): kh&ocirc;ng c&oacute; r&agrave;ng buộc g&igrave; th&ecirc;m </LI></UL><P></P><P><SPAN class="tex-font-style-bf">Lưu &yacute;</SPAN></P><P>Trong mỗi subtask, nếu bạn <SPAN class="tex-font-style-bf">chỉ x&aacute;c định đ&uacute;ng rằng cấp bậc của từng đồng xu c&oacute; thể hay kh&ocirc;ng thể được x&aacute;c định</SPAN>, nhưng <SPAN class="tex-font-style-bf">kh&ocirc;ng x&aacute;c định đ&uacute;ng l&agrave; được x&aacute;c định sau lần c&acirc;n thứ mấy</SPAN>, bạn vẫn sẽ nhận được <SPAN class="tex-font-style-bf">50% số điểm</SPAN> của subtask đ&oacute;.</P></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Examples</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Input</DIV><PRE class="content" data-content="4 4
+2 4
+3 1
+4 1
+2 3
+">
+<DIV class="test-example-line test-example-line-even test-example-line-0">4 4</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">2 4</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">3 1</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">4 1</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">2 3</DIV></PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+3 4 -1 -1 
+</PRE></DIV><DIV class="input"><DIV class="title">Input</DIV><PRE class="content" data-content="6 8
+1 5
+5 4
+6 2
+2 5
+4 3
+6 1
+6 5
+2 1
+">
+<DIV class="test-example-line test-example-line-even test-example-line-0">6 8</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">1 5</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">5 4</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">6 2</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">2 5</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">4 3</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">6 1</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">6 5</DIV><DIV class="test-example-line test-example-line-even test-example-line-0">2 1</DIV></PRE></DIV><DIV class="output"><DIV class="title">Output</DIV><PRE class="content">
+8 8 5 5 5 6 
+</PRE></DIV></DIV></DIV><P></P><P></P><DIV class="note"><DIV class="section-title">Note</DIV><P></P><P><SPAN class="tex-font-style-bf">Giải th&iacute;ch v&iacute; dụ 1</SPAN></P><P>Ta c&oacute; thể x&aacute;c định rằng sau 3 lần c&acirc;n đầu ti&ecirc;n, đồng xu $$$1$$$ l&agrave; đồng xu nặng nhất, nhưng kh&ocirc;ng thể biết điều đ&oacute; chỉ sau 2 lần c&acirc;n. Do đ&oacute;, số nguy&ecirc;n đầu ti&ecirc;n trong kết quả đ&uacute;ng l&agrave; $$$3$$$.</P><P>Tương tự, ta c&oacute; thể x&aacute;c định rằng đồng xu $$$2$$$ l&agrave; đồng xu nhẹ nhất sau 4 lần c&acirc;n, nhưng kh&ocirc;ng phải sau 3 lần c&acirc;n. V&igrave; vậy, số nguy&ecirc;n thứ hai trong kết quả đ&uacute;ng l&agrave; $$$4$$$.</P><P>Lưu &yacute; rằng cả hai thứ tự $$$2,4,3,1$$$ v&agrave; $$$2,3,4,1$$$ đều l&agrave; c&aacute;c c&aacute;ch sắp xếp hợp lệ của trọng lượng c&aacute;c đồng xu. Do đ&oacute;, đồng xu $$$3$$$ c&oacute; thể c&oacute; cấp bậc $$$2$$$ hoặc $$$3$$$, đều ph&ugrave; hợp với tất cả c&aacute;c kết quả c&acirc;n, v&igrave; vậy cấp bậc của đồng xu $$$3$$$ kh&ocirc;ng bao giờ được x&aacute;c định chắc chắn. Tương tự, đồng xu $$$4$$$ cũng kh&ocirc;ng bao giờ c&oacute; cấp bậc x&aacute;c định.</P><P>Nếu kết quả của bạn l&agrave; <SPAN class="tex-font-style-tt">1 1 -1 -1</SPAN>, bạn sẽ đạt được 50% số điểm cho test nhỏ n&agrave;y.</P></DIV></DIV><P></P><P>  </P>
+
+</BODY></HTML>

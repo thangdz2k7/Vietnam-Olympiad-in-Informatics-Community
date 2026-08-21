@@ -1,0 +1,80 @@
+\begin{problem}{Cân xu}{standard input}{standard output}{3 seconds}{1024 megabytes}
+
+Bổn Sâm có $n$ đồng xu \textbf{khác nhau về trọng lượng} và một cái cân hai bên.  
+Mỗi khi anh ta đặt hai đồng xu $x$ và $y$ lên cân, trọng lượng tương đối giữa chúng sẽ được hiển thị --- tức là anh ta biết được giữa $x$ và $y$, đồng nào nặng hơn.
+
+Gọi \textbf{cấp bậc} của đồng xu $x$ là số lượng đồng xu \textit{không nặng hơn} đồng xu $x$ (bao gồm cả chính nó).  
+Do đó, đồng xu nhẹ nhất có cấp bậc là $1$, đồng nhẹ nhì là $2$, \ldots, và đồng nặng nhất có cấp bậc là $n$.
+
+Sẽ có $m$ lần cân. Với mỗi đồng xu, hãy xác định sau \textbf{lần cân thứ $m$} thì có thể chắc chắn biết cấp bậc của đồng xu đó.
+
+
+\InputFile
+Dòng đầu tiên nhập hai số nguyên $n, m$.
+
+Tiếp theo là $m$ dòng, dòng thứ $i$ nhập hai số nguyên $x, y$, cho biết kết quả lần cân thứ $i$ là \textbf{đồng xu $x$ nặng hơn đồng xu $y$}.
+
+Đảm bảo rằng các kết quả cân \textbf{không mâu thuẫn} với nhau.
+
+
+\OutputFile
+In ra một dòng gồm $n$ số nguyên.
+
+Số thứ $i$ là \textbf{lần cân sớm nhất} sau đó có thể xác định chắc chắn \textbf{cấp bậc của đồng xu $i$}.
+
+Nếu \textbf{không thể xác định}, in \texttt{-1} tại vị trí đó.
+
+
+\Scoring
+\textbf{Giới hạn dữ liệu}
+
+\begin{itemize}
+\item $2 \le n \le 200{,}000$
+\item $1 \le m \le 800{,}000$
+\item $1 \le x, y \le n,\ x \ne y$
+\end{itemize}
+
+\textbf{Subtask}
+
+\begin{itemize}
+\item Subtask 1 (6 điểm): $n \le 7,\ m \le 20$
+\item Subtask 2 (16 điểm): $n \le 100,\ m \le 400$
+\item Subtask 3 (10 điểm): $n \le 1000,\ m \le 4000$
+\item Subtask 4 (68 điểm): không có ràng buộc gì thêm
+\end{itemize}
+
+\textbf{Lưu ý}
+
+Trong mỗi subtask, nếu bạn \textbf{chỉ xác định đúng rằng cấp bậc của từng đồng xu có thể hay không thể được xác định},  
+nhưng \textbf{không xác định đúng là được xác định sau lần cân thứ mấy},  
+bạn vẫn sẽ nhận được \textbf{50\% số điểm} của subtask đó.
+
+
+\Examples
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\exmpfile{example.02}{example.02.a}%
+\end{example}
+
+\Note
+\textbf{Giải thích ví dụ 1}
+
+Ta có thể xác định rằng sau 3 lần cân đầu tiên, đồng xu $1$ là đồng xu nặng nhất, 
+nhưng không thể biết điều đó chỉ sau 2 lần cân. 
+Do đó, số nguyên đầu tiên trong kết quả đúng là $3$.
+
+Tương tự, ta có thể xác định rằng đồng xu $2$ là đồng xu nhẹ nhất sau 4 lần cân, 
+nhưng không phải sau 3 lần cân. 
+Vì vậy, số nguyên thứ hai trong kết quả đúng là $4$.
+
+Lưu ý rằng cả hai thứ tự $2,4,3,1$ và $2,3,4,1$ đều là các cách sắp xếp hợp lệ của trọng lượng các đồng xu.  
+Do đó, đồng xu $3$ có thể có cấp bậc $2$ hoặc $3$, đều phù hợp với tất cả các kết quả cân, 
+vì vậy cấp bậc của đồng xu $3$ không bao giờ được xác định chắc chắn.  
+Tương tự, đồng xu $4$ cũng không bao giờ có cấp bậc xác định.
+
+Nếu kết quả của bạn là \texttt{1 1 -1 -1}, bạn sẽ đạt được 50\% số điểm cho test nhỏ này.
+
+
+\end{problem}
+
