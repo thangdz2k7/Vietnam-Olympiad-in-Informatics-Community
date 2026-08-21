@@ -1,0 +1,36 @@
+\begin{problem}{TST 2025 - Bài 1}{standard input}{standard output}{1.5 seconds}{1024 megabytes}
+
+Bạn được cho một dãy số $H$ gồm $N$ phần tử và $Q$ truy vấn, mỗi truy vấn gồm hai số nguyên dương $L,R\ (1\le L\le R\le N)$. Với mỗi truy vấn, xét dãy số $A=\{H_L,H_{L+1},\dots,H_R\}$, nhiệm vụ của bạn là sắp xếp lại dãy số $A$ theo thứ tự bất kỳ sao cho tổng chênh lệch của hai phần tử liên tiếp bất kỳ trong dãy là lớn nhất có thể. Hay nói cách khác, bạn cần tối đa hóa giá trị của $S=\sum_{i=1}^{R-L}|A_i-A_{i+1}|$.
+
+\InputFile
+Dòng đầu tiên gồm hai số nguyên dương $N$ và $Q$ tương ứng với số lượng phần tử trong dãy $H$ và số lượng truy vấn ($1\le N,Q\le 4\times 10^5$).
+
+Dòng thứ hai gồm $N$ số nguyên dương $H_1,H_2,\dots,H_N$ tương ứng với giá trị của các phần tử trong dãy $H$ ($1\le H_i\le 10^9$).
+
+Cuối cùng là $Q$ dòng, mỗi dòng gồm hai số nguyên dương $L,R$ mô tả các truy vấn ($1\le L\le R\le N$).
+
+
+\OutputFile
+Với mỗi truy vấn, in ra kết quả trên một dòng là tổng chênh lệch tối đa có thể đạt được.
+
+\Scoring
+\begin{center}
+  \begin{tabular}{|c|c|l|} \hline
+    \textbf{Subtask} & \textbf{Điểm} & \textbf{Giới hạn} \\ \hline
+    1 & $12$ & $N,Q\le 20$ \\ \hline
+    2 & $20$ & $N,Q\le 2000$ \\ \hline
+    3 & $15$ & $N,Q\le 5\times 10^4$ \\ \hline
+    4 & $15$ & $H_i\le 100$ với mọi $i$ từ $1$ đến $N$ \\ \hline
+    5 & $20$ & $N,Q\le 15\times 10^4$ \\ \hline
+    6 & $18$ & Không có ràng buộc gì thêm \\ \hline
+  \end{tabular}
+\end{center}
+
+\Example
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\end{example}
+
+\end{problem}
+

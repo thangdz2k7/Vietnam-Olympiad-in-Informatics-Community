@@ -1,0 +1,21 @@
+\begin{center}
+  \begin{tabular}{|c|c|l|} \hline
+    \textbf{Subtask} & \textbf{Điểm} & \textbf{Giới hạn} \\ \hline
+    1 & $10$ & $N \le 18$ \\ \hline
+    2 & $10$ & Các phòng có cạnh chung với tối đa $2$ phòng khác \\ \hline
+    3 & $80$ & Không có ràng buộc gì thêm \\ \hline
+  \end{tabular}
+\end{center}
+
+\textbf{Cách tính điểm}
+
+Giả sử mỗi test có tối đa $1$ điểm. Nếu vị trí phòng cuối cùng của Bob sau khi hàm \texttt{solveBob()} được gọi không phải căn phòng có kho báu, bạn sẽ được $0$ điểm cho toàn bộ test đó. Ngược lại, gọi $Q$ là tổng số lần thay đổi trạng thái đèn của Alice và Bob trong suốt lượt chơi. Khi đó, điểm của bạn sẽ được tính theo công thức như sau:
+\begin{itemize}
+   \item Nếu $Q\ge 49$ thì bạn được $0.25\times 0.9^{Q-49}$ điểm.
+   \item Nếu $33\le Q\le 48$ thì bạn được $0.25+0.25 \times 0.7^{Q-33}$ điểm.
+   \item Nếu $25\le Q\le 32$ thì bạn được $0.5 + 0.2 \times 0.6^{Q-25}$ điểm.
+   \item Nếu $18\le Q\le 24$ thì bạn được $0.7 + 0.2 \times 0.7^{Q-18}$ điểm.
+   \item Nếu $Q\le 17$ thì bạn được $1$ điểm.
+\end{itemize}
+
+Điểm của mỗi subtask là điểm thấp nhất của một test trong subtask đó nhân với số điểm tối đa của subtask.

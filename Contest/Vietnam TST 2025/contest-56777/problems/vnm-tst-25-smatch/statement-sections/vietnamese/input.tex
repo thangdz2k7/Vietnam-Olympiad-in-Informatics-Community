@@ -1,0 +1,36 @@
+\textbf{Chi tiết cài đặt}
+
+Thí sinh cần cài đặt hàm sau:
+
+\begin{lstlisting}
+string solve()
+\end{lstlisting}
+
+\begin{itemize}
+   \item Hàm này có thể được gọi nhiều lần bởi trình chấm.
+   \item Hàm này cần trả về xâu $U$ thỏa mãn điều kiện đề bài. Lưu ý là bạn không được biết trước giá trị của $N,L,R$.
+\end{itemize}
+
+Trong hàm \texttt{solve()}, thí sinh được phép gọi hàm sau (thí sinh cần khai báo trước thư viện \texttt{smatchlib.h} để có thể sử dụng hàm này):
+
+\begin{lstlisting}
+int ask(string s)
+\end{lstlisting}
+
+\begin{itemize}
+   \item $s$: Xâu mà Bob sẽ đưa cho Alice để thực hiện câu hỏi. Xâu $s$ chỉ được chứa các ký tự Latin in thường và có độ dài không quá $200$.
+   \item Hàm sẽ trả về một số nguyên không âm là số lượng xâu $t\in \Omega$ thỏa mãn $s$ khớp với $t$ chia lấy dư cho $379$.
+\end{itemize}
+
+Ngoài ra, thí sinh được phép cài đặt các biến, các hàm toàn cục, nhưng không được phép có hàm \texttt{main()}.
+
+Cách cài đặt và trình chấm ví dụ có thể xem tại contest material, lưu ý trình chấm ví dụ chỉ mô phỏng cách hoạt động và sẽ không được dùng để chấm chính thức.
+
+\textbf{Ràng buộc}
+
+\begin{itemize}
+   \item $4\le N\le 13$
+   \item $1\le L\le R\le N$
+\end{itemize}
+
+Trình chấm của bài này \textbf{không mang tính thích ứng}. Điều này tương đương với việc các giá trị $N,L,R$ sẽ được cố định từ đầu và không thay đổi trong suốt quá trình chương trình của bạn tương tác với trình chấm.

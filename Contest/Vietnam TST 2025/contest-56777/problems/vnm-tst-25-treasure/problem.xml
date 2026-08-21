@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="30" short-name="vnm-tst-25-treasure" url="https://polygon.codeforces.com/p3JPAhH/two_sides/vnm-tst-25-treasure">
+    <names>
+        <name language="vietnamese" value="TST 2025 - Bài 3"/>
+    </names>
+    <statements latex-pdf-mode="obsolete">
+        <statement charset="UTF-8" language="vietnamese" mathjax="true" path="statements/vietnamese/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="vietnamese" mathjax="true" path="statements/.html/vietnamese/problem.html" type="text/html"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>3000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>50</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test description="Archive &quot;subtask1.zip&quot;; file &quot;input1.txt&quot;" group="subtask1" method="manual" points="1.0"/>
+                <test description="Archive &quot;subtask1.zip&quot;; file &quot;input2.txt&quot;" group="subtask1" method="manual" points="1.0"/>
+                <test description="Archive &quot;subtask1.zip&quot;; file &quot;input3.txt&quot;" group="subtask1" method="manual" points="1.0"/>
+                <test description="Archive &quot;subtask1.zip&quot;; file &quot;input4.txt&quot;" group="subtask1" method="manual" points="1.0"/>
+                <test description="Archive &quot;subtask1.zip&quot;; file &quot;input5.txt&quot;" group="subtask1" method="manual" points="1.0"/>
+                <test cmd="generator --testId 1 --subtask 2 --tree line --light on --flipped 0 --adaptive 0 --RATE_N 0.975876 --RATE_A 0.230792 --RATE_B 0.502324 dtlcouegmd" group="subtask2" method="generated" points="1.0"/>
+                <test cmd="generator --testId 2 --subtask 2 --tree line --light on --flipped 0 --adaptive 0 --RATE_N 0.966524 --RATE_A 0.795679 --RATE_B 0.64121 hifnuapwyn" group="subtask2" method="generated" points="1.0"/>
+                <test cmd="generator --testId 3 --subtask 2 --tree line --light on --flipped 0 --adaptive 0 --RATE_N 0.950467 --RATE_A 0.0326184 --RATE_B 0.652001 ytszotwfle" group="subtask2" method="generated" points="1.0"/>
+                <test cmd="generator --testId 4 --subtask 2 --tree line --light off --flipped 0 --adaptive 1 --RATE_N 0.910196 --RATE_A 0.757407 --RATE_B 0.166499 pnscguemwr" group="subtask2" method="generated" points="1.0"/>
+                <test cmd="generator --testId 5 --subtask 2 --tree line --light hard --flipped 0 --adaptive 1 --RATE_N 0.916835 --RATE_A 0.674214 --RATE_B 0.512528 ypnxnnpmud" group="subtask2" method="generated" points="1.0"/>
+                <test cmd="generator --testId 1 --subtask 3 --tree line --light on --flipped 0 --adaptive 1 --RATE_N 0.986011 --RATE_A 0.578466 --RATE_B 0.224957 tlcouegmdb" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 2 --subtask 3 --tree full_binary --light off --flipped 0 --adaptive 0 --RATE_N 0.966524 --RATE_A 0.64121 --RATE_B 0.675651 fnuapwyndm" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 3 --subtask 3 --tree random --light random --flipped 0 --adaptive 1 --RATE_N 0.947274 --RATE_A 0.209398 --RATE_B 0.133804 zotwflegsj" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 4 --subtask 3 --tree binary --light hard --flipped 0 --adaptive 1 --RATE_N 0.951481 --RATE_A 0.559081 --RATE_B 0.295375 guemwrczqx" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 5 --subtask 3 --tree recur --light hard --flipped 0 --adaptive 1 --RATE_N 0.924598 --RATE_A 0.209835 --RATE_B 0.497287 npmuduhzno" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 32 --subtask 3 --tree line --light hard --flipped 0 --adaptive 0 --RATE_N 0.996222 --RATE_A 0.00257379 --RATE_B 0.645397 mkxhaiafmv" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 92 --subtask 3 --tree line --light hard --flipped 1 --adaptive 0 --RATE_N 0.975488 --RATE_A 0.440391 --RATE_B 0.945274 vysyvgxlsp" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 100 --subtask 3 --tree line --light hard --flipped 1 --adaptive 0 --RATE_N 0.967187 --RATE_A 0.540539 --RATE_B 0.819906 ivtmpqzqts" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 101 --subtask 3 --tree line --light hard --flipped 1 --adaptive 0 --RATE_N 0.915483 --RATE_A 0.374358 --RATE_B 0.333928 saxgmoywdg" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 136 --subtask 3 --tree line --light hard --flipped 1 --adaptive 0 --RATE_N 0.985886 --RATE_A 0.00496638 --RATE_B 0.556973 hjsdaskqgl" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 153 --subtask 3 --tree line --light hard --flipped 0 --adaptive 0 --RATE_N 0.838661 --RATE_A 0.0723091 --RATE_B 0.300094 jzjmmyfmvx" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 245 --subtask 3 --tree recur --light hard --flipped 0 --adaptive 0 --RATE_N 0.968545 --RATE_A 0.821319 --RATE_B 0.260035 fewczmnooz" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 155 --subtask 3 --tree recur --light hard --flipped 0 --adaptive 0 --RATE_N 0.966524 --RATE_A 0.64121 --RATE_B 0.675651 fnuapwyndm" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 166 --subtask 3 --tree full_binary --light hard --flipped 0 --adaptive 0 --RATE_N 0.832581 --RATE_A 0.75443 --RATE_B 0.554794 obdagwdwxs" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 180 --subtask 3 --tree recur --light hard --flipped 0 --adaptive 0 --RATE_N 0.916028 --RATE_A 0.287688 --RATE_B 0.062487 xouyfjhnwp" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 222 --subtask 3 --tree line --light hard --flipped 0 --adaptive 0 --RATE_N 0.857412 --RATE_A 0.650376 --RATE_B 0.135021 alxzxillkf" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 234 --subtask 3 --tree full_binary --light hard --flipped 0 --adaptive 0 --RATE_N 0.916589 --RATE_A 0.640868 --RATE_B 0.243973 blpncetyht" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 164 --subtask 3 --tree recur --light hard --flipped 0 --adaptive 0 --RATE_N 0.968545 --RATE_A 0.821319 --RATE_B 0.260035 fewczmnooz" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 174 --subtask 3 --tree full_binary --light hard --flipped 0 --adaptive 0 --RATE_N 0.82514 --RATE_A 0.923124 --RATE_B 0.25026 ildlrkjoyr" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 179 --subtask 3 --tree full_binary --light hard --flipped 0 --adaptive 0 --RATE_N 0.901695 --RATE_A 0.0271911 --RATE_B 0.638725 swvtxganww" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 195 --subtask 3 --tree line --light hard --flipped 0 --adaptive 0 --RATE_N 0.857412 --RATE_A 0.650376 --RATE_B 0.135021 alxzxillkf" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 207 --subtask 3 --tree full_binary --light hard --flipped 0 --adaptive 0 --RATE_N 0.916589 --RATE_A 0.640868 --RATE_B 0.243973 blpncetyht" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 415 --subtask 3 --tree line --light hard --flipped 0 --adaptive 0 --RATE_N 0.857412 --RATE_A 0.650376 --RATE_B 0.135021 alxzxillkf" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 596 --subtask 3 --tree recur --light hard --flipped 1 --adaptive 0 --RATE_N 0.993476 --RATE_A 0.736505 --RATE_B 0.84064 rigjjtthzh" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 618 --subtask 3 --tree line --light hard --flipped 0 --adaptive 0 --RATE_N 0.994096 --RATE_A 0.400066 --RATE_B 0.985179 kwgtxnqxmu" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 635 --subtask 3 --tree recur --light hard --flipped 1 --adaptive 0 --RATE_N 0.941038 --RATE_A 0.11479 --RATE_B 0.142708 vzpqbxcqos" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 725 --subtask 3 --tree recur --light hard --flipped 1 --adaptive 0 --RATE_N 0.989666 --RATE_A 0.903665 --RATE_B 0.695118 qjokvncect" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 790 --subtask 3 --tree recur --light hard --flipped 0 --adaptive 0 --RATE_N 0.979875 --RATE_A 0.342412 --RATE_B 0.370096 dluubvwspa" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 851 --subtask 3 --tree recur --light hard --flipped 0 --adaptive 0 --RATE_N 0.932199 --RATE_A 0.468656 --RATE_B 0.813694 ejcjnoyvyr" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 864 --subtask 3 --tree recur --light hard --flipped 1 --adaptive 0 --RATE_N 0.872138 --RATE_A 0.466525 --RATE_B 0.438636 yqqdffioag" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 875 --subtask 3 --tree line --light hard --flipped 0 --adaptive 0 --RATE_N 0.825058 --RATE_A 0.214113 --RATE_B 0.519129 bntnumomgz" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 912 --subtask 3 --tree recur --light hard --flipped 1 --adaptive 0 --RATE_N 0.991776 --RATE_A 0.775066 --RATE_B 0.0967002 botkziuttj" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 928 --subtask 3 --tree line --light hard --flipped 0 --adaptive 0 --RATE_N 0.918711 --RATE_A 0.774512 --RATE_B 0.933941 etglthgour" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 955 --subtask 3 --tree line --light hard --flipped 0 --adaptive 0 --RATE_N 0.932259 --RATE_A 0.777408 --RATE_B 0.488206 kdgbrrkxwq" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 1046 --subtask 3 --tree recur --light hard --flipped 1 --adaptive 0 --RATE_N 1 --RATE_A 0.657886 --RATE_B 0.350796 ivudydgxws" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 1082 --subtask 3 --tree recur --light hard --flipped 1 --adaptive 0 --RATE_N 1 --RATE_A 0.999328 --RATE_B 0.016311 ouylqobsge" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 1244 --subtask 3 --tree recur --light hard --flipped 0 --adaptive 0 --RATE_N 1 --RATE_A 0.256854 --RATE_B 0.976298 gzwyfgdcbk" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 1265 --subtask 3 --tree recur --light hard --flipped 1 --adaptive 0 --RATE_N 1 --RATE_A 0.739567 --RATE_B 0.240359 whlwdygnno" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 1350 --subtask 3 --tree recur --light hard --flipped 1 --adaptive 0 --RATE_N 1 --RATE_A 0.203263 --RATE_B 0.758615 wzeualgfdm" group="subtask3" method="generated" points="1.0"/>
+                <test cmd="generator --testId 1547 --subtask 3 --tree recur --light hard --flipped 1 --adaptive 0 --RATE_N 1 --RATE_A 0.690059 --RATE_B 0.828089 lltgafhvlc" group="subtask3" method="generated" points="1.0"/>
+            </tests>
+            <groups>
+                <group feedback-policy="points" name="subtask1" points="5.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="subtask2" points="5.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="subtask3" points="40.0" points-policy="complete-group"/>
+            </groups>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+            <file for-types="cpp.*" path="files/treasurelib.h" type="h.g++">
+                <stages>
+                    <stage name="compile"/>
+                </stages>
+                <assets>
+                    <asset name="solution"/>
+                </assets>
+            </file>
+        </resources>
+        <attachments>
+            <file path="files/treasure.zip"/>
+        </attachments>
+        <executables>
+            <executable>
+                <source path="files/checker.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/checker.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/generator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/generator.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker type="testlib">
+            <source path="files/checker.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>17</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="valid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="accepted">
+                <source path="solutions/2centroid.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/2centroid.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/go0.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/go0.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/go1.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/go1.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/model.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/model.exe" type="exe.win32"/>
+            </solution>
+            <solution note="extra 10 flips" tag="accepted">
+                <source path="solutions/model_add_10.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/model_add_10.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/pattern.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/pattern.exe" type="exe.win32"/>
+            </solution>
+            <solution note="test rand()" tag="accepted">
+                <source path="solutions/sol_rand.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/sol_rand.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>

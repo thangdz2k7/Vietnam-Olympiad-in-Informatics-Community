@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="6" short-name="vnm-tst-25-building" url="https://polygon.codeforces.com/p6ypsvM/two_sides/vnm-tst-25-building">
+    <names>
+        <name language="vietnamese" value="TST 2025 - Bài 1"/>
+    </names>
+    <statements latex-pdf-mode="obsolete">
+        <statement charset="UTF-8" language="vietnamese" mathjax="true" path="statements/vietnamese/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="vietnamese" mathjax="true" path="statements/.html/vietnamese/problem.html" type="text/html"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1500</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>51</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test group="0" method="manual" points="0.0" sample="true"/>
+                <test cmd="gen 1 20 20 1000000000 5 0 0" group="1" method="generated" points="0.0"/>
+                <test cmd="gen 1 20 20 1000000000 20 0 0" group="1" method="generated" points="0.0"/>
+                <test cmd="gen 10 20 20 1000000000 20 0 0" group="1" method="generated" points="0.0"/>
+                <test cmd="gen 10 20 20 1000000000 20 0 1" group="1" method="generated" points="0.0"/>
+                <test cmd="gen 1 20 20 1000000000 5 1 0" group="1" method="generated" points="0.0"/>
+                <test cmd="gen 1 20 20 1000000000 20 1 0" group="1" method="generated" points="12.0"/>
+                <test cmd="gen 25 50 2000 1000000000 50 0 0" group="2" method="generated" points="0.0"/>
+                <test cmd="gen 500 1250 2000 1000000000 50 0 0" group="2" method="generated" points="0.0"/>
+                <test cmd="gen 500 1250 2000 1000000000 2000 0 0" group="2" method="generated" points="0.0"/>
+                <test cmd="gen 1250 2000 2000 1000000000 50 0 0" group="2" method="generated" points="0.0"/>
+                <test cmd="gen 1250 2000 2000 1000000000 2000 0 0" group="2" method="generated" points="0.0"/>
+                <test cmd="gen 1250 2000 2000 1000000000 2000 0 1" group="2" method="generated" points="0.0"/>
+                <test cmd="gen 1250 2000 2000 1000000000 50 1 0" group="2" method="generated" points="0.0"/>
+                <test cmd="gen 1250 2000 2000 1000000000 2000 1 0" group="2" method="generated" points="0.0"/>
+                <test cmd="gen 1250 2000 2000 1000000000 2000 1 1" group="2" method="generated" points="20.0"/>
+                <test cmd="gen 75 250 50000 1000000000 250 0 0" group="3" method="generated" points="0.0"/>
+                <test cmd="gen 20000 35000 50000 1000000000 250 0 0" group="3" method="generated" points="0.0"/>
+                <test cmd="gen 20000 35000 50000 1000000000 50000 0 0" group="3" method="generated" points="0.0"/>
+                <test cmd="gen 35000 50000 50000 1000000000 250 0 0" group="3" method="generated" points="0.0"/>
+                <test cmd="gen 35000 50000 50000 1000000000 50000 0 0" group="3" method="generated" points="0.0"/>
+                <test cmd="gen 35000 50000 50000 1000000000 50000 0 1" group="3" method="generated" points="0.0"/>
+                <test cmd="gen 35000 50000 50000 1000000000 250 1 0" group="3" method="generated" points="0.0"/>
+                <test cmd="gen 35000 50000 50000 1000000000 50000 1 0" group="3" method="generated" points="0.0"/>
+                <test cmd="gen 35000 50000 50000 1000000000 50000 1 1" group="3" method="generated" points="15.0"/>
+                <test cmd="gen 300 750 400000 100 750 0 0" group="4" method="generated" points="0.0"/>
+                <test cmd="gen 100000 200000 400000 100 400000 0 0" group="4" method="generated" points="0.0"/>
+                <test cmd="gen 200000 300000 400000 100 400000 0 0" group="4" method="generated" points="0.0"/>
+                <test cmd="gen 300000 400000 400000 100 400000 0 0" group="4" method="generated" points="0.0"/>
+                <test cmd="gen 300000 400000 400000 100 400000 0 1" group="4" method="generated" points="0.0"/>
+                <test cmd="gen 300000 400000 400000 100 400000 1 0" group="4" method="generated" points="0.0"/>
+                <test cmd="gen 300000 400000 400000 100 400000 1 1" group="4" method="generated" points="15.0"/>
+                <test cmd="gen 200 500 150000 1000000000 500 0 0" group="5" method="generated" points="0.0"/>
+                <test cmd="gen 60000 90000 150000 1000000000 500 0 0" group="5" method="generated" points="0.0"/>
+                <test cmd="gen 60000 90000 150000 1000000000 150000 0 0" group="5" method="generated" points="0.0"/>
+                <test cmd="gen 90000 120000 150000 1000000000 500 0 0" group="5" method="generated" points="0.0"/>
+                <test cmd="gen 90000 120000 150000 1000000000 150000 0 0" group="5" method="generated" points="0.0"/>
+                <test cmd="gen 120000 150000 150000 1000000000 500 0 0" group="5" method="generated" points="0.0"/>
+                <test cmd="gen 120000 150000 150000 1000000000 150000 0 0" group="5" method="generated" points="0.0"/>
+                <test cmd="gen 120000 150000 150000 1000000000 500 1 0" group="5" method="generated" points="0.0"/>
+                <test cmd="gen 120000 150000 150000 1000000000 150000 1 0" group="5" method="generated" points="0.0"/>
+                <test cmd="gen 120000 150000 150000 1000000000 150000 1 1" group="5" method="generated" points="20.0"/>
+                <test cmd="gen 500 1000 400000 1000000000 1000 0 0" group="6" method="generated" points="0.0"/>
+                <test cmd="gen 150000 225000 400000 1000000000 400000 0 0" group="6" method="generated" points="0.0"/>
+                <test cmd="gen 225000 300000 400000 1000000000 1000 0 0" group="6" method="generated" points="0.0"/>
+                <test cmd="gen 225000 300000 400000 1000000000 400000 0 0" group="6" method="generated" points="0.0"/>
+                <test cmd="gen 300000 400000 400000 1000000000 1000 0 0" group="6" method="generated" points="0.0"/>
+                <test cmd="gen 300000 400000 400000 1000000000 400000 0 0" group="6" method="generated" points="0.0"/>
+                <test cmd="gen 300000 400000 400000 1000000000 1000 1 0" group="6" method="generated" points="0.0"/>
+                <test cmd="gen 300000 400000 400000 1000000000 400000 1 0" group="6" method="generated" points="0.0"/>
+                <test cmd="gen 300000 400000 400000 1000000000 400000 1 1" group="6" method="generated" points="18.0"/>
+            </tests>
+            <groups>
+                <group feedback-policy="points" name="0" points="0.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="1" points="12.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="0"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="2" points="20.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="0"/>
+                        <dependency group="1"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="3" points="15.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="0"/>
+                        <dependency group="1"/>
+                        <dependency group="2"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="4" points="15.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="0"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="5" points="20.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="0"/>
+                        <dependency group="1"/>
+                        <dependency group="2"/>
+                        <dependency group="3"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="6" points="18.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="0"/>
+                        <dependency group="1"/>
+                        <dependency group="2"/>
+                        <dependency group="3"/>
+                        <dependency group="4"/>
+                        <dependency group="5"/>
+                    </dependencies>
+                </group>
+            </groups>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/gen.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/gen.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::lcmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>5</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/sol-mo-log.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/sol-mo-log.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/sol-mo.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/sol-mo.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/sol-pbs.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/sol-pbs.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="time-limit-exceeded-or-accepted">
+                <source path="solutions/sol-persistent.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/sol-persistent.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/sol-sqrt.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/sol-sqrt.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/sol-wavelet-ac.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/sol-wavelet-ac.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/sub1.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/sub1.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/sub2.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/sub2.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/sub4.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/sub4.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>

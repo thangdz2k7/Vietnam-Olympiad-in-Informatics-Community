@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="24" short-name="vnm-tst-25-igraph" url="https://polygon.codeforces.com/p5uZrsd/two_sides/vnm-tst-25-igraph">
+    <names>
+        <name language="vietnamese" value="TST 2025 - Bài 4"/>
+    </names>
+    <statements latex-pdf-mode="obsolete">
+        <statement charset="UTF-8" language="vietnamese" mathjax="true" path="statements/vietnamese/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="vietnamese" mathjax="true" path="statements/.html/vietnamese/problem.html" type="text/html"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>1500</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>36</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test group="0" method="manual" points="0.0" sample="true"/>
+                <test cmd="gen_test 1 1 1 1" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_test 1 1 20 200" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_test 1 1 300 280" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_test 1 2 298 300" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_test 1 3 296 297" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_test 1 3 196 29" group="1" method="generated" points="0.0"/>
+                <test cmd="gen_test 1 4 298 299" group="1" method="generated" points="8.0"/>
+                <test cmd="gen_test 2 1 50 3000" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_test 2 1 5000 5000" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_test 2 1 490 4800" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_test 2 2 4998 5000" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_test 2 3 4996 4297" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_test 2 3 1969 2999" group="2" method="generated" points="0.0"/>
+                <test cmd="gen_test 2 4 4998 4999" group="2" method="generated" points="18.0"/>
+                <test cmd="gen_test 3 1 500 100000" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_test 3 1 50000 50000" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_test 3 1 100000 48900" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_test 3 2 99998 100000" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_test 3 3 99996 99297" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_test 3 3 19969 29999" group="3" method="generated" points="0.0"/>
+                <test cmd="gen_test 3 4 99998 99999" group="3" method="generated" points="26.0"/>
+                <test cmd="gen_test 4 1 501 100000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_test 4 1 50002 50000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_test 4 1 100000 48903" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_test 4 2 99994 100000" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_test 4 3 99986 99297" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_test 4 3 19929 29299" group="4" method="generated" points="0.0"/>
+                <test cmd="gen_test 4 4 92998 99299" group="4" method="generated" points="22.0"/>
+                <test cmd="gen_test 5 1 505 100000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_test 5 1 50060 50000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_test 5 1 100000 48970" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_test 5 2 99999 100000" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_test 5 3 98996 99297" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_test 5 3 89969 39999" group="5" method="generated" points="0.0"/>
+                <test cmd="gen_test 5 4 99998 98999" group="5" method="generated" points="26.0"/>
+            </tests>
+            <groups>
+                <group feedback-policy="points" name="0" points="0.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="1" points="8.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="0"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="2" points="18.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="0"/>
+                        <dependency group="1"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="3" points="26.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="4" points="22.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="5" points="26.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="0"/>
+                        <dependency group="1"/>
+                        <dependency group="2"/>
+                    </dependencies>
+                </group>
+            </groups>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/gen_test.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/gen_test.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/valid.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/valid.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker name="std::ncmp.cpp" type="testlib">
+            <source path="files/check.cpp" type="cpp.g++17"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/valid.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/valid.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>7</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="valid"/>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="accepted">
+                <source path="solutions/ac1.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/ac1.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/ac2.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/ac2.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="main">
+                <source path="solutions/ac_pm.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/ac_pm.exe" type="exe.win32"/>
+                <extra-tags>
+                    <extra-tag tag="accepted" testset="tests"/>
+                </extra-tags>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/huyhau6a2-sub1.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/huyhau6a2-sub1.exe" type="exe.win32"/>
+                <extra-tags>
+                    <extra-tag group="1" tag="accepted"/>
+                </extra-tags>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/huyhau6a2-sub2.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/huyhau6a2-sub2.exe" type="exe.win32"/>
+                <extra-tags>
+                    <extra-tag group="1" tag="accepted"/>
+                    <extra-tag group="2" tag="accepted"/>
+                </extra-tags>
+            </solution>
+            <solution tag="time-limit-exceeded">
+                <source path="solutions/huyhau6a2-sub3.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/huyhau6a2-sub3.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/huyhau6a2-wa.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/huyhau6a2-wa.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="rejected">
+                <source path="solutions/thangdz_sub1_bitset.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/thangdz_sub1_bitset.exe" type="exe.win32"/>
+                <extra-tags>
+                    <extra-tag group="1" tag="accepted"/>
+                </extra-tags>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>

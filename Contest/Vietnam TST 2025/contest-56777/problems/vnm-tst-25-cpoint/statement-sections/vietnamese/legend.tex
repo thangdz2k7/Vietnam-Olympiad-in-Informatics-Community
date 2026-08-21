@@ -1,0 +1,17 @@
+Cho $29$ điểm trên mặt phẳng tọa độ được đánh số từ $0$ đến $28$, điểm thứ $i$ được mô tả bởi cặp số $(x_i,y_i)$, với $x_i,y_i$ lần lượt là hoành độ và tung độ ($x_i,y_i$ đều là số nguyên không âm). Nhiệm vụ của bạn là cần chọn $8$ trong số $29$ điểm sao cho trung bình cộng hoành độ của $8$ điểm được chọn là một số nguyên và trung bình cộng tung độ của $8$ điểm cũng là một số nguyên.
+
+Hiện tại đang có một khe nhớ gồm $64$ ô (tạm gọi là mảng $a$), được đánh số từ $0$ đến $63$, mỗi khe nhớ có thể lưu trữ được $30$ bit nhị phân. Bạn được phép thực hiện ba loại thao tác cập nhật như sau:
+\begin{itemize}
+  \item $add(i,j,k)$ ($0\le i,j,k\le 63$): Tính giá trị của $a_i+a_j$ sau đó gán vào giá trị của $a_k$. Nếu giá trị thu được biểu diễn nhiều hơn $30$ bit thì chỉ lấy $30$ bit cuối.
+  \item $sub(i,j,k)$ ($0\le i,j,k\le 63$): Tính giá trị của $a_i-a_j$ sau đó gán vào giá trị của $a_k$. Nếu giá trị thu được là số âm thì cập nhật $a_k:=0$.
+  \item $half(i,j)$ ($0\le i,j\le 63$): Tính giá trị của $\lfloor \frac{a_i}2 \rfloor$ sau đó gán vào giá trị của $a_j$.
+\end{itemize}
+
+\textbf{Lưu ý:} Trong một thao tác, các giá trị $i,j,k$ không nhất thiết phải đôi một phân biệt mà có thể bằng nhau.
+
+Ngoài ra, bạn không được phép truy cập giá trị trực tiếp vào các khe nhớ mà chỉ được phép thực hiện truy vấn kiểm tra như sau:
+\begin{itemize}
+   \item Chọn một tập gồm một số khe nhớ, khi đó bạn sẽ được trả về kết quả xem có tồn tại hai khe nhớ mang giá trị bằng nhau hay không.
+\end{itemize}
+
+Ban đầu, các giá trị $x_i,y_i$ được lưu trước vào các khe nhớ như sau: $a_{2i}=x_i,a_{2i+1}=y_i$ với mọi $i$ từ $0$ đến $28$. Các khe nhớ còn lại ban đầu có giá trị bằng $0$.

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<contest url="https://polygon.codeforces.com/c/56777">
+    <names>
+        <name language="vietnamese" value="Vietnam TST 2025"/>
+    </names>
+    <problems>
+        <problem index="a" url="https://polygon.codeforces.com/p6ypsvM/two_sides/vnm-tst-25-building"/>
+        <problem index="b" url="https://polygon.codeforces.com/p4t4p05/two_sides/vnm-tst-25-power"/>
+        <problem index="c" url="https://polygon.codeforces.com/p3JPAhH/two_sides/vnm-tst-25-treasure"/>
+        <problem index="d" url="https://polygon.codeforces.com/p5uZrsd/two_sides/vnm-tst-25-igraph"/>
+        <problem index="e" url="https://polygon.codeforces.com/p1awDta/two_sides/vnm-tst-25-cpoint"/>
+        <problem index="f" url="https://polygon.codeforces.com/p9ukyJL/two_sides/vnm-tst-25-smatch"/>
+    </problems>
+</contest>

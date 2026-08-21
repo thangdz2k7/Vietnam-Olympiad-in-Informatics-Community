@@ -1,0 +1,37 @@
+\begin{problem}{TST 2025 - Bài 4}{standard input}{standard output}{1.5 seconds}{1024 megabytes}
+
+Bạn được cho một hoán vị $P$ gồm $N$ phần tử. Dựng một đồ thị vô hướng không trọng số gồm $N$ đỉnh sao cho: tồn tại cạnh nối từ $i$ đến $j$ nếu như $(i-j)\times (P_i-P_j)<0$. Bạn được cho $Q$ truy vấn, mỗi truy vấn gồm ba số nguyên dương $u,l,r$. Nhiệm vụ của bạn là với mỗi truy vấn, hãy tính tổng các giá trị $D(u,v)$ thỏa mãn $l\le D(u,v)\le r$ với mọi $v$ từ $1$ đến $n$.
+
+Trong đó, $D(u,v)$ là độ dài đường đi ngắn nhất từ $u$ đến $v$, $D(u,v)=+\infty$ nếu như không tồn tại đường đi từ $u$ đến $v$.
+
+\InputFile
+Dòng đầu tiên gồm hai số nguyên dương $N$ và $Q$ tương ứng với số lượng phần tử của hoán vị $P$ và số lượng truy vấn ($1\le N,Q\le 10^5$).
+
+Dòng thứ hai gồm $N$ số nguyên dương $P_1,P_2,\dots,P_N$ ($1\le P_i\le N$). Dữ liệu đảm bảo các giá trị $P_i$ đôi một phân biệt.
+
+Cuối cùng là $Q$ dòng, mỗi dòng gồm ba số nguyên dương $u,l,r$ mô tả các truy vấn ($1\le l\le r\le N,1\le u\le N$).
+
+\OutputFile
+Với mỗi truy vấn, in ra kết quả trên một dòng tương ứng với kết quả của truy vấn đó.
+
+\Scoring
+\begin{center}
+  \begin{tabular}{|c|c|l|} \hline
+    \textbf{Subtask} & \textbf{Điểm} & \textbf{Giới hạn} \\ \hline
+    1 & $8$ & $N,Q \leq 300$ \\ \hline
+    2 & $18$ & $N,Q\le 5000$ \\ \hline
+    3 & $26$ & $r \leq 20$ \\ \hline
+    4 & $22$ & $l=1, r=N$ \\ \hline
+    5 & $26$ & Không có ràng buộc gì thêm \\ \hline
+  \end{tabular}
+\end{center}
+
+
+\Example
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\end{example}
+
+\end{problem}
+

@@ -1,0 +1,23 @@
+Alice và Bob tham gia một trò chơi trên mê cung. Mê cung có $N$ phòng, mỗi phòng có dạng hình tam giác, có thể di chuyển từ phòng này đến phòng khác nếu chúng có cạnh chung. Mê cung đảm bảo có thể di chuyển từ phòng này đến phòng khác bằng cách di chuyển qua một tập các phòng không lặp lại và có \textbf{đúng} một cách di chuyển thỏa mãn. Mỗi phòng có một bóng đèn ban đầu có trạng thái bật hoặc tắt. Trò chơi được diễn ra như sau:
+
+Ở lượt đầu tiên, Alice bị quản trò bịt mắt và xuất hiện ở một phòng nào đó. Sau khi bỏ bịt mắt, cô sẽ chôn kho báu tại phòng đó, sau đó thực hiện liên tục các hành động. Quá trình ở lượt đầu tiên của Alice có thể được mô tả như sau:
+\begin{itemize}
+   \item Khi Alice đến phòng chưa đến bao giờ, Alice sẽ đánh dấu phòng đó bằng một số $x$ là số nguyên dương nhỏ nhất mà cô chưa dùng để đánh dấu. \textit{Lưu ý: Ở phòng mà Alice xuất hiện đầu tiên, cô sẽ luôn đánh dấu số $1$ tại phòng đó}.
+   \item Tại một phòng, Alice có thể biết được:
+   \begin{itemize}
+      \item Trạng thái đánh dấu của các phòng kề với phòng đang ở (chưa đánh dấu hoặc đã được đánh dấu một số nào đó).
+      \item Trạng thái của bóng đèn tại phòng đang ở (bật hoặc tắt).
+   \end{itemize}
+   \item Trong suốt quá trình chơi, Alice có thể thực hiện một trong hai loại hành động như sau:
+   \begin{itemize}
+      \item Di chuyển qua một phòng kề với phòng đang ở.
+      \item Thay đổi trạng thái của bóng đèn tại phòng đang ở (từ bật sang tắt hoặc ngược lại).
+   \end{itemize}
+   \item Khi không còn thực hiện hành động nữa, Alice thoát khỏi mê cung và kết thúc lượt chơi của cô.
+\end{itemize}
+
+Sau khi Alice thoát khỏi mê cung, quản trò sẽ xóa hết tất cả dấu vết di chuyển của Alice, nhưng sẽ không thay đổi trạng thái của các bóng đèn.
+
+Ở lượt thứ hai, Bob bị quản trò bịt mắt và xuất hiện ở một phòng nào đó. \textit{Lưu ý: Phòng Bob xuất hiện ban đầu có thể khác so với phòng Alice xuất hiện ban đầu.} Sau khi bỏ bịt mắt, Bob có thể thực hiện các hành động tương tự như Alice (được mô tả ở trên). Nhiệm vụ của Bob là tìm cách di chuyển sao cho ngay trước khi kết thúc lượt chơi của Bob, anh ấy xuất hiện tại phòng Alice chôn kho báu. Khi đó thì hai người chiến thắng.
+
+Trước khi chơi, Alice và Bob không biết được bất kỳ thông tin gì về mê cung, nhưng họ được phép bàn bạc chiến thuật. Nhiệm vụ của họ là cần tìm ra chiến thuật tối ưu sao cho có thể thắng được trò chơi.

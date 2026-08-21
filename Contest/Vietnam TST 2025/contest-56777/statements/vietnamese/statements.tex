@@ -1,0 +1,57 @@
+\documentclass [11pt, a4paper, oneside] {article}
+
+\usepackage [T2A] {fontenc}
+\usepackage [utf8] {inputenc}
+\usepackage [english, russian] {babel}
+\usepackage {amsmath}
+\usepackage {amssymb}
+\usepackage {olymp}
+\usepackage {comment}
+\usepackage {epigraph}
+\usepackage {expdlist}
+\usepackage {graphicx}
+\usepackage {multirow}
+\usepackage {siunitx}
+\usepackage {ulem}
+%\usepackage {hyperref}
+\usepackage {import}
+\usepackage {ifpdf}
+\usepackage {xparse}
+\ifpdf
+  \DeclareGraphicsRule{*}{mps}{*}{}
+\fi
+
+\begin {document}
+
+\contest
+{Vietnam TST 2025}%
+{Vietnam}%
+{}%
+
+\binoppenalty=10000
+\relpenalty=10000
+
+\renewcommand{\t}{\texttt}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+
+\graphicspath{{../../problems/vnm-tst-25-building/statements/vietnamese/}}
+  \def\ProblemIndex{A}
+\import{../../problems/vnm-tst-25-building/statements/vietnamese/}{./problem.tex}
+\graphicspath{{../../problems/vnm-tst-25-power/statements/vietnamese/}}
+  \def\ProblemIndex{B}
+\import{../../problems/vnm-tst-25-power/statements/vietnamese/}{./problem.tex}
+\graphicspath{{../../problems/vnm-tst-25-treasure/statements/vietnamese/}}
+  \def\ProblemIndex{C}
+\import{../../problems/vnm-tst-25-treasure/statements/vietnamese/}{./problem.tex}
+\graphicspath{{../../problems/vnm-tst-25-igraph/statements/vietnamese/}}
+  \def\ProblemIndex{D}
+\import{../../problems/vnm-tst-25-igraph/statements/vietnamese/}{./problem.tex}
+\graphicspath{{../../problems/vnm-tst-25-cpoint/statements/vietnamese/}}
+  \def\ProblemIndex{E}
+\import{../../problems/vnm-tst-25-cpoint/statements/vietnamese/}{./problem.tex}
+\graphicspath{{../../problems/vnm-tst-25-smatch/statements/vietnamese/}}
+  \def\ProblemIndex{F}
+\import{../../problems/vnm-tst-25-smatch/statements/vietnamese/}{./problem.tex}
+
+\end {document}

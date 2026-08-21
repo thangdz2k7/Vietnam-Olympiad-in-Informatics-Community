@@ -1,0 +1,21 @@
+\begin{center}
+  \begin{tabular}{|c|c|l|} \hline
+    \textbf{Subtask} & \textbf{Điểm} & \textbf{Giới hạn} \\ \hline
+    1 & $20$ & Tồn tại ít nhất $8$ trong $29$ điểm có giá trị $x_i,y_i$ đều chia hết cho $8$ \\ \hline
+    2 & $80$ & Không có ràng buộc gì thêm \\ \hline
+  \end{tabular}
+\end{center}
+
+\textbf{Cách tính điểm}
+
+Giả sử test có tối đa $1$ điểm. Nếu trong bất kỳ lần gọi hàm \texttt{solve()} nào, tập điểm được chọn không thỏa mãn điều kiện của đề bài thì bạn sẽ được $0$ điểm cho toàn bộ test đó. Ngược lại, gọi $Q$ là số lần gọi hàm \texttt{ask()} tối đa trong một lần gọi hàm \texttt{solve()}. Khi đó, điểm của bạn sẽ được tính theo công thức như sau:
+\begin{itemize}
+   \item Nếu $Q>276$ thì bạn được $0$ điểm.
+   \item Nếu $174 \le Q\le 276$ thì bạn được $0.2 \times 0.95^{Q-174}$ điểm.
+   \item Nếu $94 \le Q< 174$ thì bạn được $0.2 + 0.2 \times 0.95^{Q-94}$ điểm.
+   \item Nếu $76\le Q< 94$ thì bạn được $0.4 + 0.5 \times 0.8^{Q-76}$ điểm.
+   \item Nếu $66<Q<76$ thì bạn được $0.9 + 0.1 \times 0.8^{Q-66}$ điểm.
+   \item Nếu $Q\le 66$ thì bạn được $1$ điểm.
+\end{itemize}
+
+Điểm của mỗi subtask là điểm thấp nhất của một test trong subtask đó.

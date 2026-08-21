@@ -1,0 +1,47 @@
+\textbf{Đây là bài toán tương tác có thích ứng.}
+
+Thí sinh cần cài đặt hai hàm sau:
+
+\begin{lstlisting}
+void solveAlice(vector<int> S) {
+
+}
+
+void solveBob(vector<int> S) {
+
+}
+\end{lstlisting}
+
+Trong đó, hàm \texttt{solveAlice} cần mô tả chiến thuật chơi của Alice, hàm \texttt{solveBob} cần mô tả chiến thuật chơi của Bob. Trong mỗi hàm, \texttt{vector<int> S} là mảng mô tả trạng thái của phòng mà Alice và Bob xuất hiện ban đầu$^{\dagger}$.
+
+$\dagger$: Mảng $S$ mô tả trạng thái của phòng bao gồm $4$ phần tử, đánh số từ $0$ đến $3$. Trong đó, $S_0$ mô tả trạng thái bóng đèn của phòng đó, $S_1,S_2,S_3$ mô tả trạng thái đánh dấu của các phòng kề với phòng đang ở tại các hướng:
+\begin{itemize}
+  \item $S_i=-1$ nếu như không tồn tại phòng kề với phòng đang ở tại hướng thứ $i$.
+  \item $S_i=0$ nếu như phòng kề với phòng đang ở tại hướng thứ $i$ chưa được đánh dấu.
+  \item $S_i>0$ nếu như phòng kề với phòng đang ở tại hướng thứ $i$ đã được đánh dấu số $S_i$.
+\end{itemize}
+
+\textbf{Lưu ý:} Do trong mê cung không xác định được phương hướng nên các giá trị $S_1,S_2,S_3$ có thể bị đảo lại theo bất kỳ thứ tự nào.
+
+Trong hàm \texttt{solveAlice} và \texttt{solveBob}, thí sinh được phép gọi các hàm sau (thí sinh cần khai báo trước thư viện \texttt{treasurelib.h} để có thể sử dụng các hàm này):
+\begin{center}
+\begin{lstlisting}
+vector<int> move(int i)
+\end{lstlisting}
+\end{center}
+
+Hàm này tương ứng với việc thực hiện di chuyển sang phòng kề với phòng đang ở tại hướng $i$ ($i=1,2$ hoặc $3$). Sau khi gọi hàm này, thí sinh sẽ được trả về một \texttt{vector<int>} tương ứng với mảng trạng thái của phòng sau khi đã di chuyển đến đó.
+
+Hàm này được gọi tối đa $5\times N$ lần.
+
+\begin{center}
+\begin{lstlisting}
+void flip()
+\end{lstlisting}
+\end{center}
+
+Hàm này tương ứng với việc thay đổi trạng thái bóng đèn của phòng đang ở (từ bật sang tắt hoặc ngược lại).
+
+Ngoài ra, thí sinh còn được phép cài đặt các biến, các hàm toàn cục, nhưng không được phép có hàm \texttt{main()}. Hàm \texttt{solveAlice} được gọi trước hàm \texttt{solveBob} và hai hàm này được gọi trên hai chương trình hoàn toàn độc lập.
+
+Cách cài đặt ví dụ và trình chấm ví dụ xem tại \href{https://codeforces.com/}{Dummy}, lưu ý trình chấm ví dụ chỉ mô phỏng cách hoạt động và sẽ không được dùng để chấm chính thức.

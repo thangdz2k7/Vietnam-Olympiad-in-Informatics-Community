@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="7" short-name="vnm-tst-25-power" url="https://polygon.codeforces.com/p4t4p05/two_sides/vnm-tst-25-power">
+    <names>
+        <name language="vietnamese" value="TST 2025 - Bài 2"/>
+    </names>
+    <statements latex-pdf-mode="obsolete">
+        <statement charset="UTF-8" language="vietnamese" mathjax="true" path="statements/vietnamese/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="vietnamese" mathjax="true" path="statements/.html/vietnamese/problem.html" type="text/html"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1" treat-points-from-checker-as-percent="true">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>1073741824</memory-limit>
+            <test-count>45</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test group="1" method="manual" points="1.0" sample="true"/>
+                <test group="1" method="manual" points="1.0"/>
+                <test group="1" method="manual" points="1.0"/>
+                <test group="1" method="manual" points="1.0"/>
+                <test group="1" method="manual" points="1.0"/>
+                <test description="Archive &quot;POWER2.zip&quot;; file &quot;input006.txt&quot;" group="2" method="manual" points="1.0"/>
+                <test description="Archive &quot;POWER2.zip&quot;; file &quot;input007.txt&quot;" group="2" method="manual" points="1.0"/>
+                <test description="Archive &quot;POWER2.zip&quot;; file &quot;input008.txt&quot;" group="2" method="manual" points="1.0"/>
+                <test description="Archive &quot;POWER2.zip&quot;; file &quot;input009.txt&quot;" group="2" method="manual" points="1.0"/>
+                <test description="Archive &quot;POWER2.zip&quot;; file &quot;input010.txt&quot;" group="2" method="manual" points="1.0"/>
+                <test description="Archive &quot;POWER2.zip&quot;; file &quot;input011.txt&quot;" group="2" method="manual" points="1.0"/>
+                <test description="Archive &quot;POWER2.zip&quot;; file &quot;input012.txt&quot;" group="2" method="manual" points="1.0"/>
+                <test description="Archive &quot;POWER2.zip&quot;; file &quot;input013.txt&quot;" group="2" method="manual" points="1.0"/>
+                <test description="Archive &quot;POWER2.zip&quot;; file &quot;input014.txt&quot;" group="2" method="manual" points="1.0"/>
+                <test description="Archive &quot;POWER2.zip&quot;; file &quot;input015.txt&quot;" group="2" method="manual" points="1.0"/>
+                <test description="Archive &quot;POWER2.zip&quot;; file &quot;input016.txt&quot;" group="2" method="manual" points="1.0"/>
+                <test description="Archive &quot;POWER2.zip&quot;; file &quot;input017.txt&quot;" group="2" method="manual" points="1.0"/>
+                <test description="Archive &quot;POWER2.zip&quot;; file &quot;input018.txt&quot;" group="2" method="manual" points="1.0"/>
+                <test description="Archive &quot;POWER2.zip&quot;; file &quot;input019.txt&quot;" group="2" method="manual" points="1.0"/>
+                <test group="2" method="manual" points="1.0"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input021.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input022.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input023.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input024.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input025.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input026.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input027.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input028.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input029.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input030.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input031.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input032.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input033.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input034.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input035.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input036.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input037.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input038.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input039.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input040.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input041.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input042.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input043.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input044.txt&quot;" group="3" method="manual" points="3.2"/>
+                <test description="Archive &quot;POWER3.zip&quot;; file &quot;input050.txt&quot;" group="3" method="manual" points="3.2"/>
+            </tests>
+            <groups>
+                <group feedback-policy="points" name="1" points="5.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="2" points="15.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="1"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="3" points="80.00000000000003" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="1"/>
+                        <dependency group="2"/>
+                    </dependencies>
+                </group>
+            </groups>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+            <file path="files/tutorial.tex"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/checker.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/checker.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/validator3.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/validator3.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker type="testlib">
+            <source path="files/checker.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <testset>
+                <test-count>2</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests>
+                    <test verdict="ok"/>
+                    <test verdict="wrong-answer"/>
+                </tests>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator3.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/validator3.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>21</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="valid"/>
+                        <test verdict="valid"/>
+                        <test verdict="valid"/>
+                        <test verdict="valid"/>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="valid"/>
+                        <test verdict="valid"/>
+                        <test verdict="valid"/>
+                        <test verdict="valid"/>
+                        <test verdict="valid"/>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                        <test verdict="valid"/>
+                        <test verdict="valid"/>
+                        <test verdict="valid"/>
+                        <test verdict="valid"/>
+                        <test verdict="valid"/>
+                        <test verdict="valid"/>
+                        <test verdict="invalid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="main">
+                <source path="solutions/sol.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/sol.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>

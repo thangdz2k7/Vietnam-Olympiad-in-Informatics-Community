@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="10" short-name="vnm-tst-25-cpoint" url="https://polygon.codeforces.com/p1awDta/two_sides/vnm-tst-25-cpoint">
+    <names>
+        <name language="vietnamese" value="TST 2025 - Bài 5"/>
+    </names>
+    <statements latex-pdf-mode="obsolete">
+        <statement charset="UTF-8" language="vietnamese" mathjax="true" path="statements/vietnamese/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="vietnamese" mathjax="true" path="statements/.html/vietnamese/problem.html" type="text/html"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1" treat-points-from-checker-as-percent="true">
+        <testset name="tests">
+            <time-limit>1000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>50</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="generator --mode anti8 --is_sub1 1 1" group="sub1" method="generated" points="1.0"/>
+                <test cmd="generator --mode anti8 --is_sub1 1 2" group="sub1" method="generated" points="1.0"/>
+                <test cmd="generator --mode anti8 --is_sub1 1 3" group="sub1" method="generated" points="1.0"/>
+                <test cmd="generator --mode anti8 --is_sub1 1 4" group="sub1" method="generated" points="1.0"/>
+                <test cmd="generator --mode anti8 --is_sub1 1 5" group="sub1" method="generated" points="1.0"/>
+                <test cmd="generator --mode rand --is_sub1 1 6" group="sub1" method="generated" points="1.0"/>
+                <test cmd="generator --mode rand --is_sub1 1 7" group="sub1" method="generated" points="1.0"/>
+                <test cmd="generator --mode coll8 --is_sub1 1 8" group="sub1" method="generated" points="1.0"/>
+                <test cmd="generator --mode coll8 --is_sub1 1 9" group="sub1" method="generated" points="1.0"/>
+                <test cmd="generator --mode boundary --is_sub1 1 10" group="sub1" method="generated" points="1.0"/>
+                <test cmd="generator --mode anti8 --is_sub1 0 11" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode anti8 --is_sub1 0 12" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode anti8 --is_sub1 0 13" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode anti8 --is_sub1 0 14" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode anti8 --is_sub1 0 15" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode anti8 --is_sub1 0 16" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode anti8 --is_sub1 0 17" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode anti8 --is_sub1 0 18" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode anti8 --is_sub1 0 19" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode anti8 --is_sub1 0 20" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode anti8 --is_sub1 0 21" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode anti8 --is_sub1 0 22" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode anti8 --is_sub1 0 23" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode anti8 --is_sub1 0 24" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode rand --is_sub1 0 25" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode rand --is_sub1 0 26" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode rand --is_sub1 0 27" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode rand --is_sub1 0 28" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode rand --is_sub1 0 29" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode rand --is_sub1 0 30" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode rand --is_sub1 0 31" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode rand --is_sub1 0 32" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode rand --is_sub1 0 33" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode rand --is_sub1 0 34" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode rand --is_sub1 0 35" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode rand --is_sub1 0 36" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode rand --is_sub1 0 37" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode rand --is_sub1 0 38" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode coll8 --is_sub1 0 39" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode coll8 --is_sub1 0 40" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode coll8 --is_sub1 0 41" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode coll8 --is_sub1 0 42" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode coll8 --is_sub1 0 43" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode coll8 --is_sub1 0 44" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode boundary --is_sub1 0 45" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode boundary --is_sub1 0 46" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode boundary --is_sub1 0 47" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode boundary --is_sub1 0 48" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode all_equal --is_sub1 0 49" group="sub2" method="generated" points="1.0"/>
+                <test cmd="generator --mode all_equal --is_sub1 0 50" group="sub2" method="generated" points="1.0"/>
+            </tests>
+            <groups>
+                <group feedback-policy="points" name="sub1" points="10.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="sub2" points="40.0" points-policy="complete-group"/>
+            </groups>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file for-types="cpp.*" path="files/cpointlib.h" type="h.g++">
+                <stages>
+                    <stage name="compile"/>
+                </stages>
+                <assets>
+                    <asset name="solution"/>
+                </assets>
+            </file>
+            <file for-types="cpp.*" path="files/grader.cpp" type="cpp.g++17">
+                <stages>
+                    <stage name="compile"/>
+                </stages>
+                <assets>
+                    <asset name="solution"/>
+                </assets>
+            </file>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <executables>
+            <executable>
+                <source path="files/checker.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/checker.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/generator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/generator.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker type="testlib">
+            <source path="files/checker.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>1</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests>
+                        <test verdict="valid"/>
+                    </tests>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="main">
+                <source path="solutions/main.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/main.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/partial.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/partial.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>1</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list>
+            <stress index="1" path="stresses/001"/>
+        </list>
+    </stresses>
+</problem>

@@ -1,0 +1,11 @@
+Alice rất yêu thích các xâu kí tự. Với ba số nguyên dương $N, L, R$ ($1 \le L \le R \le N$), cô đã tạo ra tập $\Omega$ gồm tất cả các xâu độ dài $N$ là hoán vị của $N$ kí tự Latin in thường đầu tiên, sao cho vị trí của kí tự \texttt{a} trên xâu thuộc đoạn $[L; R]$ (vị trí của các ký tự trong xâu được đánh số từ $1$ đến $N$).
+
+Bob muốn tạo ra một xâu $U$ chứa tất cả các xâu trong tập $\Omega$ và có độ dài càng nhỏ càng tốt. Ở đây, xâu $X$ được gọi là \textbf{chứa} xâu $Y$ nếu như có thể xóa bỏ một số ký tự của xâu $X$ (có thể không xóa ký tự nào) và giữ nguyên thứ tự của các ký tự còn lại để có được xâu $Y$.
+
+Tuy nhiên, Alice đã không cho Bob biết chính xác giá trị của $N,L,R$. Thay vào đó, cô sẽ trả lời một số câu hỏi của anh. Với mỗi lần hỏi của Bob:
+\begin{itemize}
+   \item Bob sẽ đưa cho Alice một xâu $s$ có độ dài không quá $200$. Xâu này chỉ được chứa các ký tự Latin in thường.
+   \item Alice sẽ tính toán và trả lời cho Bob biết số xâu $t\in \Omega$ thỏa mãn xâu $s$ khớp với xâu $t$ chia lấy dư cho $379$.
+\end{itemize}
+
+Sau khi hỏi Alice một số câu hỏi, Bob sẽ trả lời xâu $U$ mà anh tìm được. Để thể hiện sự thông minh của mình trước Alice, Bob muốn giá trị $P=Q+|U|$ càng nhỏ càng tốt, trong đó $Q$ là số câu hỏi Bob đã thực hiện và $|U|$ là độ dài xâu $U$ mà Bob trả lời. Hãy lập trình giúp Bob một chương trình tương tác với Alice để thực hiện yêu cầu trên.

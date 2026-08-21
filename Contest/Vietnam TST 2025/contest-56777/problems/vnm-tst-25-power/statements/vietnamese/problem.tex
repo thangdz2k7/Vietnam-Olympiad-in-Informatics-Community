@@ -1,0 +1,49 @@
+\begin{problem}{TST 2025 - Bài 2}{standard input}{standard output}{1 second}{1024 megabytes}
+
+Bạn được cho một số nguyên dương $N$. Xét dãy số $A$ gồm $N$ phần tử thỏa mãn $A_i=1$ với mọi $i$ từ $1$ đến $N$. Nhiệm vụ của bạn là thực hiện một số thao tác sao cho sau khi thực hiện, với mọi $i$ từ $1$ đến $N$ phải thỏa mãn $A_i=i^i$. Bạn được phép thực hiện hai loại thao tác sau:
+
+\begin{itemize}
+    \item \texttt{+ i j k} ($1\le i,j,k\le N$): Cập nhật $A_k := A_i + A_j$.
+    \item \texttt{* i j k} ($1\le i,j,k\le N$): Cập nhật $A_k := A_i \times A_j$.
+\end{itemize}
+
+\textbf{Lưu ý:} Trong một thao tác, các giá trị $i,j,k$ không nhất thiết phải đôi một phân biệt mà có thể bằng nhau.
+
+\InputFile
+Gồm duy nhất một số nguyên dương $N\ (1\le N\le 2\times 10^4)$.
+
+
+\OutputFile
+Dòng đầu tiên gồm một số nguyên không âm $M$ là số thao tác thực hiện $(0\le M\le 4\times 10^5)$.
+
+Sau đó là $M$ dòng, mỗi dòng mô tả một trong hai thao tác ở trên.
+
+\Scoring
+\begin{center}
+  \begin{tabular}{|c|c|l|} \hline
+    \textbf{Subtask} & \textbf{Điểm} & \textbf{Giới hạn} \\ \hline
+    1 & $5$ & $N\le 5$ \\ \hline
+    2 & $15$ & $N\le 50$ \\ \hline
+    3 & $80$ & Không có ràng buộc gì thêm \\ \hline
+  \end{tabular}
+\end{center}
+
+\textbf{Cách tính điểm}
+
+Giả sử test có tối đa $1$ điểm. Gọi $Q=\frac{M}N$. Khi đó, điểm của bạn sẽ được tính theo công thức như sau:
+\begin{itemize}
+   \item Nếu $Q>20$ thì bạn được $0$ điểm.
+   \item Nếu $5<Q\le 20$ thì bạn được $0.9^{Q-5}$ điểm.
+   \item Nếu $Q\le 5$ thì bạn được $1$ điểm.
+\end{itemize}
+
+Điểm của mỗi subtask là điểm thấp nhất của một test trong subtask đó.
+
+\Example
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\end{example}
+
+\end{problem}
+

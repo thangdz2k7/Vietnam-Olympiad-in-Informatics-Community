@@ -1,0 +1,65 @@
+\textbf{Chi tiết cài đặt}
+
+Thí sinh cần cài đặt hàm sau:
+
+\begin{lstlisting}
+vector<int> solve()
+\end{lstlisting}
+
+\begin{itemize}
+   \item Hàm này sẽ được gọi tối đa $100$ lần bởi trình chấm.
+   \item Hàm này cần trả về chỉ số của $8$ trong số $29$ điểm được chọn, các điểm này phải thỏa mãn điều kiện đã được nêu ở đề bài. Nếu có nhiều phương án khác nhau thỏa mãn thì bạn chỉ cần đưa ra một trong số chúng.
+\end{itemize}
+
+Trong hàm \texttt{solve()}, thí sinh được phép gọi các hàm sau (thí sinh cần khai báo trước thư viện \texttt{cpointlib.h} để có thể sử dụng các hàm này):
+
+\begin{lstlisting}
+void add(int i, int j, int k)
+\end{lstlisting}
+
+\begin{itemize}
+   \item $i,j,k$: Chỉ số của các vị trí cần thiết để thực hiện thao tác cập nhật. Cần phải đảm bảo $0\le i,j,k\le 63$. Các giá trị này không nhất thiết phải đôi một phân biệt.
+   \item Hàm này sẽ thực hiện cập nhật $a_k:=a_i+a_j$. Nếu sau khi cập nhật, biểu diễn số $a_k$ có trên $30$ bit thì chỉ giữ $30$ bit cuối.
+\end{itemize}
+
+\begin{lstlisting}
+void sub(int i, int j, int k)
+\end{lstlisting}
+
+\begin{itemize}
+   \item $i,j,k$: Chỉ số của các vị trí cần thiết để thực hiện thao tác cập nhật. Cần phải đảm bảo $0\le i,j,k\le 63$. Các giá trị này không nhất thiết phải đôi một phân biệt.
+   \item Hàm này sẽ thực hiện cập nhật $a_k:=a_i-a_j$. Nếu sau khi cập nhật, $a_k$ là số âm thì cập nhật lại $a_k:=0$.
+\end{itemize}
+
+\begin{lstlisting}
+void half(int i, int j)
+\end{lstlisting}
+
+\begin{itemize}
+   \item $i,j$: Chỉ số của các vị trí cần thiết để thực hiện thao tác cập nhật. Cần phải đảm bảo $0\le i,j\le 63$. Các giá trị này không nhất thiết phải đôi một phân biệt.
+   \item Hàm này sẽ thực hiện cập nhật $a_j:=\lfloor \frac{a_i}2 \rfloor$.
+\end{itemize}
+
+\textbf{Lưu ý:} Trong một lần gọi hàm \texttt{solve()}, tổng số lần gọi hàm \texttt{add()}, \texttt{sub()}, \texttt{half()} không được vượt quá $10^5$.
+
+\begin{lstlisting}
+bool ask(string s)
+\end{lstlisting}
+
+\begin{itemize}
+   \item $s$: Xâu nhị phân mô tả trạng thái chọn hay không chọn của các khe nhớ để kiểm tra. Cần phải đảm bảo xâu $s$ có đúng $64$ ký tự và chỉ được chứa các ký tự \texttt{0} hay \texttt{1}.
+   \item Với mọi $i$ thỏa mãn $0\le i\le 63$, nếu $s_i=$\texttt{1} thì khe nhớ thứ $i$ sẽ được chọn để kiểm tra.
+   \item Hàm này sẽ trả về \texttt{true} nếu tồn tại hai khe nhớ trong số các khe nhớ được chọn mang giá trị bằng nhau. Ngược lại, hàm sẽ trả về \texttt{false}.
+\end{itemize}
+
+Ngoài ra, thí sinh được phép cài đặt các biến, các hàm toàn cục, nhưng không được phép có hàm \texttt{main()}.
+
+Cách cài đặt và trình chấm ví dụ có thể xem tại contest material, lưu ý trình chấm ví dụ chỉ mô phỏng cách hoạt động và sẽ không được dùng để chấm chính thức.
+
+\textbf{Ràng buộc}
+
+\begin{itemize}
+   \item Với mọi $i$ từ $0$ đến $28$, $0\le x_i,y_i<2^{30}$.
+\end{itemize}
+
+Trình chấm của bài này \textbf{không mang tính thích ứng}. Điều này tương đương với việc các giá trị $x_i,y_i$ sẽ được cố định từ đầu và không thay đổi trong suốt quá trình chương trình của bạn tương tác với trình chấm.

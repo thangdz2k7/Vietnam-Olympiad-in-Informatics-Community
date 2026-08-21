@@ -1,0 +1,61 @@
+\textbf{Chi tiết cài đặt}
+
+Thí sinh cần cài đặt hai hàm sau:
+
+\begin{lstlisting}
+void solveAlice(vector<int> S)
+\end{lstlisting}
+
+\begin{lstlisting}
+void solveBob(vector<int> S)
+\end{lstlisting}
+
+\begin{itemize}
+   \item Trong một test, trình chấm sẽ thực hiện trò chơi \textbf{một lần duy nhất}.
+   \item Hàm \texttt{solveAlice()} cần mô tả chiến thuật chơi của Alice, trong khi hàm \texttt{solveBob()} cần mô tả chiến thuật chơi của Bob.
+   \item Trong mỗi hàm, \texttt{vector<int> S} là mảng mô tả trạng thái$^{\dagger}$ của phòng mà Alice/Bob xuất hiện ban đầu.
+\end{itemize}
+
+$\dagger$: Mảng $S$ mô tả trạng thái của phòng bao gồm $4$ phần tử, đánh số từ $0$ đến $3$. Trong đó:
+\begin{itemize}
+   \item $S_0$ mô tả trạng thái bóng đèn của phòng ($S_0=1$ nếu bóng đèn tại phòng đó bật và $S_0=0$ trong trường hợp ngược lại).
+   \item $S_1,S_2,S_3$ mô tả trạng thái đánh dấu của các phòng kề với phòng đang ở tại các hướng:
+   \begin{itemize}
+      \item $S_i=-1$ ($1\le i\le 3$) nếu như không tồn tại phòng kề với phòng đang ở tại hướng thứ $i$.
+      \item $S_i=0$ nếu như phòng kề với phòng đang ở tại hướng thứ $i$ chưa được đánh dấu.
+      \item $S_i>0$ nếu như phòng kề với phòng đang ở tại hướng thứ $i$ đã được đánh dấu số $S_i$.
+   \end{itemize}
+   \item \textbf{Lưu ý:} Do trong mê cung không xác định được phương hướng nên các giá trị $S_1,S_2,S_3$ có thể bị đảo lại theo bất kỳ thứ tự nào.
+\end{itemize}
+
+Trong hàm \texttt{solveAlice()} và \texttt{solveBob()}, thí sinh được phép gọi các hàm sau (thí sinh cần khai báo trước thư viện \texttt{treasurelib.h} để có thể sử dụng các hàm này):
+
+\begin{lstlisting}
+vector<int> move(int i)
+\end{lstlisting}
+
+\begin{itemize}
+   \item Hàm này tương ứng với việc người chơi (Alice hoặc Bob) thực hiện di chuyển sang phòng kề với phòng đang ở tại hướng $i$. Cần phải đảm bảo $1\le i\le 3$ và $S_i\ne -1$ theo mảng trạng thái tại phòng đang ở.
+   \item Sau khi gọi hàm này, trình chấm sẽ trả về cho thí sinh một \texttt{vector<int>} tương ứng với mảng trạng thái của phòng sau khi đã di chuyển đến đó.
+   \item Trong mỗi lần gọi hàm \texttt{solveAlice()} hay \texttt{solveBob()}, hàm này được gọi tối đa $5\times N$ lần.
+\end{itemize}
+
+\begin{lstlisting}
+void flip()
+\end{lstlisting}
+
+\begin{itemize}
+   \item Hàm này tương ứng với việc thay đổi trạng thái bóng đèn của phòng đang ở (từ bật sang tắt hoặc ngược lại).
+\end{itemize}
+
+Ngoài ra, thí sinh còn được phép cài đặt các biến, các hàm toàn cục, nhưng không được phép có hàm \texttt{main()}. Hàm \texttt{solveAlice()} được gọi trước hàm \texttt{solveBob()} và hai hàm này được gọi trên hai chương trình hoàn toàn độc lập.
+
+Cách cài đặt và trình chấm ví dụ có thể xem tại contest material, lưu ý trình chấm ví dụ chỉ mô phỏng cách hoạt động và sẽ không được dùng để chấm chính thức.
+
+\textbf{Ràng buộc}
+
+\begin{itemize}
+   \item $1\le N\le 10^5$.
+\end{itemize}
+
+Trình chấm của bài này \textbf{mang tính thích ứng}. Điều này tương đương với việc trạng thái của các bóng đèn sẽ không được cố định trước mà có thể thay đổi tùy vào chiến thuật chơi của Alice và Bob. Tuy nhiên, trình chấm đảm bảo trong suốt quá trình chơi, nếu Alice hoặc Bob đã bước vào một căn phòng thì trạng thái của bóng đèn tại phòng đó sẽ cố định lại và chỉ có thể thay đổi bởi hành động của người chơi.

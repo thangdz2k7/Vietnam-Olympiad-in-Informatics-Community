@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="11" short-name="vnm-tst-25-smatch" url="https://polygon.codeforces.com/p9ukyJL/two_sides/vnm-tst-25-smatch">
+    <names>
+        <name language="vietnamese" value="TST 2025 - Bài 6"/>
+    </names>
+    <statements latex-pdf-mode="obsolete">
+        <statement charset="UTF-8" language="vietnamese" mathjax="true" path="statements/vietnamese/problem.tex" type="application/x-tex"/>
+        <statement charset="UTF-8" language="vietnamese" mathjax="true" path="statements/.html/vietnamese/problem.html" type="text/html"/>
+    </statements>
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="" run-count="1">
+        <testset name="tests">
+            <time-limit>10000</time-limit>
+            <memory-limit>268435456</memory-limit>
+            <test-count>34</test-count>
+            <input-path-pattern>tests/%02d</input-path-pattern>
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+            <tests>
+                <test cmd="generator -n 4 -subtaskId 1 -mode 1" group="sub1" method="generated" points="10.0"/>
+                <test cmd="generator -n 5 -subtaskId 2 -mode 1" group="sub2" method="generated" points="5.0"/>
+                <test cmd="generator -n 6 -subtaskId 3 -mode 1" group="sub3" method="generated" points="3.33"/>
+                <test cmd="generator -n 6 -subtaskId 3 -mode 2" group="sub3" method="generated" points="3.33"/>
+                <test cmd="generator -n 7 -subtaskId 4 -mode 1" group="sub4" method="generated" points="3.33"/>
+                <test cmd="generator -n 7 -subtaskId 4 -mode 2" group="sub4" method="generated" points="3.33"/>
+                <test cmd="generator -n 8 -subtaskId 5 -mode 1" group="sub5" method="generated" points="3.33"/>
+                <test cmd="generator -n 8 -subtaskId 5 -mode 2" group="sub5" method="generated" points="3.33"/>
+                <test cmd="generator -n 9 -subtaskId 6 -mode 1" group="sub6" method="generated" points="2.5"/>
+                <test cmd="generator -n 9 -subtaskId 6 -mode 2" group="sub6" method="generated" points="2.5"/>
+                <test cmd="generator -n 9 -subtaskId 6 -mode 3" group="sub6" method="generated" points="2.5"/>
+                <test cmd="generator -n 10 -subtaskId 7 -mode 1" group="sub7" method="generated" points="2.5"/>
+                <test cmd="generator -n 10 -subtaskId 7 -mode 2" group="sub7" method="generated" points="2.5"/>
+                <test cmd="generator -n 10 -subtaskId 7 -mode 3" group="sub7" method="generated" points="2.5"/>
+                <test cmd="generator -n 11 -subtaskId 8 -mode 1" group="sub8" method="generated" points="2.14"/>
+                <test cmd="generator -n 11 -subtaskId 8 -mode 2" group="sub8" method="generated" points="2.14"/>
+                <test cmd="generator -n 11 -subtaskId 8 -mode 3" group="sub8" method="generated" points="2.14"/>
+                <test cmd="generator -n 11 -subtaskId 8 -mode 4" group="sub8" method="generated" points="2.14"/>
+                <test cmd="generator -n 12 -subtaskId 8 -mode 1" group="sub8" method="generated" points="2.14"/>
+                <test cmd="generator -n 12 -subtaskId 8 -mode 2" group="sub8" method="generated" points="2.14"/>
+                <test cmd="generator -n 12 -subtaskId 8 -mode 3" group="sub8" method="generated" points="2.14"/>
+                <test cmd="generator -n 12 -subtaskId 8 -mode 4" group="sub8" method="generated" points="2.14"/>
+                <test cmd="generator -n 13 -subtaskId 8 -mode 1" group="sub8" method="generated" points="2.14"/>
+                <test cmd="generator -n 13 -subtaskId 8 -mode 2" group="sub8" method="generated" points="2.14"/>
+                <test cmd="generator -n 13 -subtaskId 8 -mode 3" group="sub8" method="generated" points="2.14"/>
+                <test cmd="generator -n 13 -subtaskId 8 -mode 4" group="sub8" method="generated" points="2.14"/>
+                <test cmd="generator -n 13 -subtaskId 8 -mode 5" group="sub8" method="generated" points="2.14"/>
+                <test cmd="generator -n 0 -subtaskId 2 -mode 6" group="sub2" method="generated" points="5.0"/>
+                <test cmd="generator -n 0 -subtaskId 3 -mode 6" group="sub3" method="generated" points="3.34"/>
+                <test cmd="generator -n 0 -subtaskId 4 -mode 6" group="sub4" method="generated" points="3.34"/>
+                <test cmd="generator -n 0 -subtaskId 5 -mode 6" group="sub5" method="generated" points="3.34"/>
+                <test cmd="generator -n 0 -subtaskId 6 -mode 6" group="sub6" method="generated" points="2.5"/>
+                <test cmd="generator -n 0 -subtaskId 7 -mode 6" group="sub7" method="generated" points="2.5"/>
+                <test cmd="generator -n 0 -subtaskId 8 -mode 6" group="sub8" method="generated" points="2.18"/>
+            </tests>
+            <groups>
+                <group feedback-policy="points" name="sub1" points="10.0" points-policy="complete-group"/>
+                <group feedback-policy="points" name="sub2" points="10.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="sub1"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="sub3" points="10.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="sub2"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="sub4" points="10.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="sub3"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="sub5" points="10.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="sub4"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="sub6" points="10.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="sub5"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="sub7" points="10.0" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="sub6"/>
+                    </dependencies>
+                </group>
+                <group feedback-policy="points" name="sub8" points="30.000000000000004" points-policy="complete-group">
+                    <dependencies>
+                        <dependency group="sub7"/>
+                    </dependencies>
+                </group>
+            </groups>
+        </testset>
+    </judging>
+    <files>
+        <resources>
+            <file for-types="cpp.*" path="files/grader.cpp" type="cpp.g++17">
+                <stages>
+                    <stage name="compile"/>
+                </stages>
+                <assets>
+                    <asset name="solution"/>
+                </assets>
+            </file>
+            <file path="files/olymp.sty"/>
+            <file path="files/problem.tex"/>
+            <file for-types="cpp.*" path="files/smatchlib.h" type="h.g++">
+                <stages>
+                    <stage name="compile"/>
+                </stages>
+                <assets>
+                    <asset name="solution"/>
+                </assets>
+            </file>
+            <file path="files/statements.ftl"/>
+            <file path="files/testlib.h" type="h.g++"/>
+        </resources>
+        <attachments>
+            <file path="files/smatch.zip"/>
+        </attachments>
+        <executables>
+            <executable>
+                <source path="files/checker.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/checker.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/generator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/generator.exe" type="exe.win32"/>
+            </executable>
+            <executable>
+                <source path="files/validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+            </executable>
+        </executables>
+    </files>
+    <assets>
+        <checker type="testlib">
+            <source path="files/checker.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <binary path="check.exe" type="exe.win32"/>
+            <copy path="check.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+            <testset>
+                <test-count>0</test-count>
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                <tests/>
+            </testset>
+        </checker>
+        <validators>
+            <validator>
+                <source path="files/validator.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="files/validator.exe" type="exe.win32"/>
+                <testset>
+                    <test-count>0</test-count>
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                    <tests/>
+                </testset>
+            </validator>
+        </validators>
+        <solutions>
+            <solution tag="main">
+                <source path="solutions/model.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/model.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/model_25.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/model_25.exe" type="exe.win32"/>
+            </solution>
+            <solution tag="accepted">
+                <source path="solutions/model_65.cpp" type="cpp.gcc14-64-msys2-g++23"/>
+                <binary path="solutions/model_65.exe" type="exe.win32"/>
+            </solution>
+        </solutions>
+    </assets>
+    <properties>
+        <property name="tests-wellformed" value="true"/>
+    </properties>
+    <stresses>
+        <stress-count>0</stress-count>
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+        <list/>
+    </stresses>
+</problem>
